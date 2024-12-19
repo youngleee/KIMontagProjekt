@@ -1,10 +1,13 @@
 import requests
 from sentence_transformers import SentenceTransformer, util
 import csv
+from dotenv import load_dotenv
+import os
 
 # Hugging Face API Setup
 HF_API_URL = "https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3-8B-Instruct"
-HF_API_TOKEN = "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"
+load_dotenv()  # Lädt die Variablen aus der .env-Datei
+HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 headers = {"Authorization": f"Bearer {HF_API_TOKEN}"}
 
 # Sentence Transformer für Ähnlichkeitsberechnung
