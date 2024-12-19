@@ -1,6 +1,7 @@
 pymed
 requests
 sentence-transformers
+python-dotenv
 
 # how to install the requirements:
 # pip install -r requirements.txt
