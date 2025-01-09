@@ -1,7 +1,37 @@
-Question,Level
-What are the symptoms of diabetes?,Easy
-What is the treatment for hypertension?,Easy
-What are the side effects of ibuprofen?,Easy
-How is Type 2 diabetes diagnosed?,Medium
-What are the risks of long-term ibuprofen use?,Medium
-What is the molecular mechanism of insulin resistance?,Hard
+Question,Difficulty
+Is diabetes a chronic condition?,Easy
+Does the Earth revolve around the Sun?,Easy
+Is Python a programming language?,Easy
+Is insulin important for managing diabetes?,Medium
+What is the capital of Australia?,Medium
+What is a for-loop in programming?,Medium
+What are the common symptoms of type 2 diabetes?,Medium
+Where is the Sahara Desert located?,Medium
+What is object-oriented programming (OOP)?,Medium
+What is type 1 diabetes?,Hard
+What is the longest river in the world?,Hard
+What is the difference between supervised and unsupervised learning?,Hard
+What causes diabetic ketoacidosis?,Hard
+What is the Great Barrier Reef?,Hard
+What is a neural network used for?,Hard
+What is the role of the pancreas in diabetes?,Medium
+What is the capital of Spain?,Easy
+What is HTML?,Easy
+What is the primary treatment for hypertension?,Medium
+What is the highest mountain in Africa?,Medium
+What is recursion in programming?,Medium
+What is a heart attack?,Hard
+What is the location of the Eiffel Tower?,Easy
+What is an API?,Medium
+What is the immune system's role in diabetes?,Hard
+What is the capital of Brazil?,Medium
+What is the Turing Test?,Hard
+What is a blood glucose test?,Medium
+What is the difference between a state and a country?,Medium
+What is big data?,Hard
+What is the difference between type 1 and type 2 diabetes?,Hard
+What is the largest desert in the world?,Hard
+What is a hash function?,Hard
+What is the difference between an artery and a vein?,Medium
+Where is the Amazon rainforest located?,Medium
+What is a compiler?,Medium

@@ -1,7 +1,7 @@
 from pymed import PubMed
 
 def query_medicine(question):
-    pubmed = PubMed(tool="YourTool", email="your_email@example.com")
+    pubmed = PubMed(tool="AnswerEvaluation", email="youngleeee@outlook.com")
     results = pubmed.query(question, max_results=5)
     response_text = ""
     for article in results:
