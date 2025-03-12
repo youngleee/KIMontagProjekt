@@ -166,7 +166,7 @@ for frage in fragenkatalog:
     # Ähnlichkeitsprüfung
     similarity = calculate_semantic_similarity(ki_antwort, correct_answer)
     result = "Correct" if similarity > 0.7 else "Partially correct" if similarity > 0.4 else "Wrong"
-    
+
     print(f"Similarity: {similarity:.2f}")
     print(f"Result: {result}")
     print("-" * 50)
