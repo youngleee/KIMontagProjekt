@@ -9,6 +9,8 @@ import re
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 import concurrent.futures
+import random
+from ctransformers import AutoModelForCausalLM, Config
 
 # Load environment variables
 load_dotenv()
@@ -16,7 +18,6 @@ load_dotenv()
 # Initialize embeddings for vector database
 embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
-# Free open-source LLM API configurations
 class LLMProvider:
     def __init__(self, name):
         self.name = name
@@ -24,74 +25,72 @@ class LLMProvider:
     def query(self, prompt, mc_mode=False, max_retries=3, retry_delay=5):
         raise NotImplementedError("Subclasses must implement this method")
 
-class HuggingFaceLLM(LLMProvider):
-    def __init__(self, model_name="mistralai/Mistral-7B-Instruct-v0.2"):
-        super().__init__(f"huggingface-{model_name.split('/')[-1]}")
-        self.api_url = f"https://api-inference.huggingface.co/models/{model_name}"
-        self.api_token = os.getenv("HF_API_TOKEN")
-        if not self.api_token:
-            raise ValueError("HF_API_TOKEN environment variable not set")
-        self.headers = {"Authorization": f"Bearer {self.api_token}"}
+class LocalLLM(LLMProvider):
+    def __init__(self, model_name, model_path):
+        super().__init__(model_name)
+        self.model_path = model_path
+        if not os.path.exists(model_path):
+            raise FileNotFoundError(f"Model file not found at {model_path}. Please make sure the model file exists.")
+            
+        # Configure for AMD GPU using ROCm
+        os.environ["HIP_VISIBLE_DEVICES"] = "0"  # Use the first GPU
+        os.environ["GPU_MAX_HEAP_SIZE"] = "90%"  # Allow using most of GPU memory
+        os.environ["ROCM_PATH"] = "C:\\Program Files\\AMD\\ROCm"  # Updated ROCm installation path
+            
+        self.llm = AutoModelForCausalLM.from_pretrained(
+            model_path,
+            model_type="mistral" if "mistral" in model_name else "llama",
+            max_new_tokens=512,
+            temperature=0.5,
+            context_length=2048,
+            gpu_layers=35,  # Number of layers to offload to GPU
+            batch_size=1,   # Reduced batch size for GPU memory
+            threads=4,
+            local_files_only=True  # Force using local files only
+        )
     
-    def query(self, prompt, mc_mode=False, max_retries=3, retry_delay=2):
-        """Query the Hugging Face model with retry mechanism"""
+    def query(self, prompt, mc_mode=False, max_retries=3, retry_delay=5):
+        """Query the local model with retry mechanism"""
         retries = 0
         while retries <= max_retries:
             try:
-                response = requests.post(
-                    self.api_url, 
-                    headers=self.headers, 
-                    json={"inputs": prompt}
-                )
+                # Generate response
+                generated_text = self.llm(prompt, stop=["Question:", "\n\n"], max_new_tokens=512)
                 
-                if response.status_code == 200:
-                    api_response = response.json()
-                    if api_response and isinstance(api_response, list) and "generated_text" in api_response[0]:
-                        generated_text = api_response[0]["generated_text"].strip()
-                        
-                        # Remove the prompt from the beginning if present
-                        if generated_text.startswith(prompt):
-                            generated_text = generated_text[len(prompt):].strip()
-                        
-                        # For multiple choice, strictly extract only the letter
-                        if mc_mode:
-                            # Find the first occurrence of A, B, or C in the response
-                            match = re.search(r'\b([A-C])\b', generated_text)
-                            if match:
-                                return match.group(1)  # Return just the letter
-                            
-                            # If no clear match, try to find any occurrence of A, B, or C
-                            match = re.search(r'([A-C])', generated_text)
-                            if match:
-                                return match.group(1)  # Return just the letter
-                            
-                            # If still no match, return an error indicator
-                            print(f"WARNING: Could not extract a valid answer (A, B, C) from: '{generated_text}'")
-                            return "?"
-                        
-                        return generated_text
-                    else:
-                        print("Error: Invalid API response format.")
-                        return "Error: Could not generate a valid response."
-                elif response.status_code == 500 or "busy" in response.text.lower():
-                    # This is where we handle Error 500 with retries
-                    retries += 1
-                    if retries <= max_retries:
-                        print(f"Error 500: Model busy. Retrying ({retries}/{max_retries}) after {retry_delay} seconds...")
-                        time.sleep(retry_delay)
-                        # Increase delay for subsequent retries (exponential backoff)
-                        retry_delay = min(retry_delay * 1.5, 10)
-                    else:
-                        print(f"Error: Failed after {max_retries} retries.")
-                        return f"Error 500: Could not get a response from the model."
-                else:
-                    print(f"Error {response.status_code}: {response.text}")
-                    return f"Error {response.status_code}: Could not get a response from the model."
+                # For multiple choice, strictly extract only the letter
+                if mc_mode:
+                    # Find the first occurrence of A, B, or C in the response
+                    match = re.search(r'\b([A-C])\b', generated_text)
+                    if match:
+                        return match.group(1)  # Return just the letter
+                    
+                    # If no clear match, try to find any occurrence of A, B, or C
+                    match = re.search(r'([A-C])', generated_text)
+                    if match:
+                        return match.group(1)  # Return just the letter
+                    
+                    # If still no match, return an error indicator
+                    print(f"WARNING: Could not extract a valid answer (A, B, C) from: '{generated_text}'")
+                    return "?"
+                
+                return generated_text.strip()
+                
             except Exception as e:
-                print(f"Exception during API call: {e}")
-                return f"Error: {str(e)}"
+                print(f"Exception during model inference: {e}")
+                retries += 1
+                if retries <= max_retries:
+                    print(f"Retrying ({retries}/{max_retries}) after {retry_delay} seconds...")
+                    time.sleep(retry_delay)
+                else:
+                    return f"Error: {str(e)}"
 
-# Keeping just the Hugging Face LLM implementation since we're using 3 Hugging Face models
+class MistralLLM(LocalLLM):
+    def __init__(self):
+        super().__init__("mistral-7b", "models/mistral-7b-instruct-v0.2.Q4_K_M.gguf")
+
+class DeepSeekLLM(LocalLLM):
+    def __init__(self):
+        super().__init__("deepseek-llm-7b", "models/deepseek-llm-7b-chat.Q4_K_M.gguf")
 
 def load_vector_database():
     """Load the vector database from disk."""
@@ -100,9 +99,6 @@ def load_vector_database():
 
 def retrieve_relevant_contexts(vector_store, question, k=3):
     """Retrieve the most relevant text passages for the question."""
-    # Analyze the question
-    analysis = analyze_question(question)
-    
     # Get the k most similar contexts from the vector store
     documents = vector_store.similarity_search(
         question, 
@@ -112,38 +108,7 @@ def retrieve_relevant_contexts(vector_store, question, k=3):
     # Extract the text from the documents
     contexts = [doc.page_content for doc in documents]
     
-    return contexts, analysis
-
-def analyze_question(question):
-    """Analyze the question to determine its intent and extract key entities."""
-    # Simple keyword extraction
-    keywords = re.findall(r'\b[A-Za-z][A-Za-z-]+\b', question.lower())
-    # Remove common stop words
-    stop_words = {'what', 'when', 'where', 'who', 'why', 'how', 'is', 'are', 'the', 'a', 'an', 'in', 'on', 'at', 'to', 'for', 'with', 'by', 'about', 'like', 'through', 'over', 'before', 'after', 'between', 'under', 'during', 'since', 'without'}
-    keywords = [word for word in keywords if word not in stop_words and len(word) > 3]
-    
-    # Question classification (very simple approach)
-    question_type = None
-    if question.lower().startswith('what'):
-        question_type = 'definition'
-    elif question.lower().startswith('how'):
-        question_type = 'procedure'
-    elif question.lower().startswith('why'):
-        question_type = 'explanation'
-    elif question.lower().startswith('when'):
-        question_type = 'time'
-    elif question.lower().startswith('where'):
-        question_type = 'location'
-    elif question.lower().startswith('who'):
-        question_type = 'person'
-    else:
-        question_type = 'general'
-    
-    return {
-        'keywords': keywords,
-        'question_type': question_type,
-        'original_question': question
-    }
+    return contexts
 
 def format_rag_prompt(question, contexts):
     """Format the RAG prompt by combining the question and retrieved contexts."""
@@ -181,7 +146,7 @@ Your answer (ONLY ONE LETTER, A, B, or C): """
     
     return prompt
 
-def generate_answer(llm, question, contexts, analysis, answer_options=None):
+def generate_answer(llm, question, contexts, answer_options=None):
     """Generate an answer based on the retrieved contexts using the specified LLM."""
     if answer_options:
         # For multiple choice questions
@@ -202,17 +167,16 @@ def generate_answer(llm, question, contexts, analysis, answer_options=None):
 def process_with_llm(llm, question, vector_store, answer_options=None):
     """Process a question with a specific LLM."""
     # Retrieve relevant contexts
-    contexts, analysis = retrieve_relevant_contexts(vector_store, question)
+    contexts = retrieve_relevant_contexts(vector_store, question)
     
     # Generate answer
-    answer, detailed_answer = generate_answer(llm, question, contexts, analysis, answer_options)
+    answer, detailed_answer = generate_answer(llm, question, contexts, answer_options)
     
     return {
         'question': question,
         'answer': answer,
         'detailed_answer': detailed_answer,
-        'contexts': contexts,
-        'analysis': analysis
+        'contexts': contexts
     }
 
 def load_questions_from_json(json_file_path):
@@ -281,11 +245,22 @@ def evaluate_answers_by_difficulty(results, llm_name, output_file=None):
     return evaluation
 
 def main():
-    parser = argparse.ArgumentParser(description="RAG pipeline with multiple LLM evaluations")
-    parser.add_argument("--json", default="Fragenkatalog.json", help="Path to the JSON file with questions")
-    parser.add_argument("--limit", type=int, default=None, help="Limit the number of questions to process")
+    parser = argparse.ArgumentParser(description="RAG Pipeline for Question Answering")
+    parser.add_argument("--question", type=str, required=False, help="Optional: Single question to answer. If not provided, will use questions from Fragenkatalog.json")
+    parser.add_argument("--mc", action="store_true", help="Run in multiple choice mode")
+    parser.add_argument("--options", nargs="+", help="Multiple choice options")
+    parser.add_argument("--llm", type=str, choices=["mistral", "deepseek"], 
+                      default="mistral", help="LLM to use")
     args = parser.parse_args()
-    
+
+    # Initialize the appropriate LLM
+    if args.llm == "mistral":
+        llm = MistralLLM()
+    elif args.llm == "deepseek":
+        llm = DeepSeekLLM()
+    else:
+        raise ValueError(f"Unknown LLM: {args.llm}")
+
     # Check if vector database exists
     if not Path("faiss_index").exists():
         print("Error: Vector database not found. Please run the original script to build it first.")
@@ -296,37 +271,16 @@ def main():
     vector_store = load_vector_database()
     
     # Load questions from JSON file
-    json_file_path = args.json
+    json_file_path = "Fragenkatalog.json"
     print(f"Loading questions from {json_file_path}...")
     questions = load_questions_from_json(json_file_path)
     
-    # Limit questions if specified
-    if args.limit:
-        questions = questions[:args.limit]
-        print(f"Limited to processing {args.limit} questions")
+    # Process questions with the selected LLM
+    results = []
+    print(f"\nProcessing {len(questions)} questions with {llm.name}...")
     
-    # Initialize LLM providers
-    try:
-        llm_providers = [
-            #HuggingFaceLLM("meta-llama/Meta-Llama-3-8B-Instruct"),   # Original model from your code
-            HuggingFaceLLM("microsoft/phi-2"),                        # Microsoft's Phi-2 model
-            HuggingFaceLLM("google/flan-t5-large")                    # Google's Flan-T5 model
-        ]
-        
-        print(f"Initialized {len(llm_providers)} LLM providers")
-        for llm in llm_providers:
-            print(f"  - {llm.name}")
-    except ValueError as e:
-        print(f"Error initializing LLM providers: {e}")
-        print("Please set required API keys in .env file.")
-        return
-    
-    # Process questions with each LLM provider
-    for llm in llm_providers:
-        results = []
-        print(f"\nProcessing {len(questions)} questions with {llm.name}...")
-        
-        for i, q in enumerate(questions, 1):
+    for i, q in enumerate(questions, 1):
+        try:
             print(f"Processing question {i}/{len(questions)}: {q['id']} with {llm.name}")
             question_text = q['frage']
             options = q['antwortmoeglichkeiten']
@@ -348,21 +302,42 @@ def main():
             # Print progress
             print(f"  Model answer: {result['answer']}, Correct: {correct_answer}, Difficulty: {difficulty}")
             results.append(result)
-        
-        # Evaluate the results by difficulty
-        output_file = f"evaluation_results_{llm.name}.txt"
-        print(f"\nEvaluating results for {llm.name}...")
-        evaluation = evaluate_answers_by_difficulty(results, llm.name, output_file)
-        
-        # Print summary
-        print(f"\nEvaluation Summary for {llm.name}:")
-        for difficulty, counts in evaluation['by_difficulty'].items():
-            if counts["total"] > 0:
-                accuracy = (counts["correct"] / counts["total"]) * 100
-                print(f"{difficulty}: {counts['correct']}/{counts['total']} ({accuracy:.2f}%)")
-        
-        print(f"Overall: {evaluation['correct']}/{evaluation['total']} ({evaluation['accuracy']:.2f}%)")
-        print(f"Detailed results saved to {output_file}")
+            
+            # Save progress after each question
+            output_file = f"evaluation_results_{llm.name}.txt"
+            with open(output_file, 'w', encoding='utf-8') as file:
+                file.write(f"# Evaluation Results for {llm.name}\n\n")
+                for j, r in enumerate(results, 1):
+                    file.write(f"## Question {j}: {r['question']}\n")
+                    file.write(f"**Difficulty:** {r['difficulty']}\n")
+                    file.write(f"**Model Answer:** {r['answer']}\n")
+                    if r['detailed_answer']:
+                        file.write(f"**Detailed Explanation:** {r['detailed_answer']}\n")
+                    file.write(f"**Correct Answer:** {r['correct_answer']} ({r['correct_answer_text']})\n")
+                    file.write(f"**Result:** {'✓ Correct' if r['answer'] == r['correct_answer'] else '✗ Incorrect'}\n\n")
+                
+        except KeyboardInterrupt:
+            print("\nScript interrupted by user. Saving progress...")
+            break
+        except Exception as e:
+            print(f"\nError processing question {i}: {str(e)}")
+            print("Saving progress and continuing with next question...")
+            continue
+    
+    # Evaluate the results by difficulty
+    output_file = f"evaluation_results_{llm.name}.txt"
+    print(f"\nEvaluating results for {llm.name}...")
+    evaluation = evaluate_answers_by_difficulty(results, llm.name, output_file)
+    
+    # Print summary
+    print(f"\nEvaluation Summary for {llm.name}:")
+    for difficulty, counts in evaluation['by_difficulty'].items():
+        if counts["total"] > 0:
+            accuracy = (counts["correct"] / counts["total"]) * 100
+            print(f"{difficulty}: {counts['correct']}/{counts['total']} ({accuracy:.2f}%)")
+    
+    print(f"Overall: {evaluation['correct']}/{evaluation['total']} ({evaluation['accuracy']:.2f}%)")
+    print(f"Detailed results saved to {output_file}")
 
 if __name__ == "__main__":
     main()
