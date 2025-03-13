@@ -1,0 +1,849 @@
+# Evaluation Results for huggingface-phi-2
+
+## Question 1: Welches der folgenden Konzepte beschreibt den systematischen Einsatz von Methoden und Werkzeugen zur Entwicklung und Implementierung von Software?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Softwaretechnik)
+**Result:** ✗ Incorrect
+
+## Question 2: Die Frage nach dem Ziel oder Zweck eines Sachverhalts ist welcher Art von Frage zuzuordnen?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Wozu?)
+**Result:** ✗ Incorrect
+
+## Question 3: Auf welche Dimension der Betrachtung zielt die Frage Warum? in der Systemanalyse primär ab?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Den zugrundeliegenden Grund oder die Ursache)
+**Result:** ✗ Incorrect
+
+## Question 4: Wer sind typischerweise die Personen, die Anforderungen an ein zu entwickelndes Softwaresystem definieren und unterschiedliche fachliche Interessen vertreten?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Stakeholder)
+**Result:** ✗ Incorrect
+
+## Question 5: Welches der folgenden Dokumente dient primär der Dokumentation von Software-Engineering-Ergebnissen gemäß etablierten Lösungsansätzen?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Ein UML-Diagramm)
+**Result:** ✗ Incorrect
+
+## Question 6: Was ist das übergeordnete Ziel einer strukturierten Vorgehensweise (Methode) in der Softwareentwicklung?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Die wirtschaftliche Erstellung qualitativ hochwertiger Software)
+**Result:** ✗ Incorrect
+
+## Question 7: In welchen Phasen eines Softwareentwicklungsprojekts spielt die Softwaretechnik eine Rolle?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Von der ersten Analyse bis zur Wartung und zum Einsatz)
+**Result:** ✗ Incorrect
+
+## Question 8: Welches Konzept beschreibt eine Gesamtheit von Elementen, die in einer bestimmten Weise miteinander verbunden sind und als funktionale Einheit betrachtet werden können?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Ein System)
+**Result:** ✗ Incorrect
+
+## Question 9: Welche der folgenden Eigenschaften zählt zu den strukturellen Merkmalen eines Systems?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Beziehungen)
+**Result:** ✗ Incorrect
+
+## Question 10: Welche der folgenden Eigenschaften beschreibt eher das Verhalten eines Systems?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Die Abfolge seiner Zustandsänderungen)
+**Result:** ✗ Incorrect
+
+## Question 11: Wovon ist der Grad der Detaillierung (Abstraktionsniveau) bei der Untersuchung von Systemelementen primär abhängig?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Von der spezifischen Fragestellung oder Aufgabe)
+**Result:** ✗ Incorrect
+
+## Question 12: Wie entsteht die oft komplexe Organisation von Systemen?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Durch die hierarchische Anordnung und Verschachtelung von Subsystemen)
+**Result:** ✗ Incorrect
+
+## Question 13: Was sind die grundlegenden, raumzeitlichen Eigenschaften, die sowohl reale als auch modellhafte Systeme kennzeichnen?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Strukturen im Raum und Verhalten in der Zeit)
+**Result:** ✗ Incorrect
+
+## Question 14: Welche drei fundamentalen Ressourcen werden für die Lebensfähigkeit von Systemen als notwendig erachtet?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Materie, Energie und Information)
+**Result:** ✗ Incorrect
+
+## Question 15: Was ist die primäre Rolle von Information im Kontext der Systemlebensfähigkeit?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Die Anleitung für die Transformation von Materie durch Energie)
+**Result:** ✗ Incorrect
+
+## Question 16: An welchem Punkt findet der Austausch von Eingangs- und Ausgangsgrößen zwischen einem System und seiner Umgebung statt?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (An der Schnittstelle des Systems)
+**Result:** ✗ Incorrect
+
+## Question 17: Wer legt primär fest, welche Größen über die Schnittstelle in ein System gelangen und es wieder verlassen?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Das System selbst)
+**Result:** ✗ Incorrect
+
+## Question 18: Welche Perspektive auf ein System betrachtet seine inneren Bestandteile und deren Zusammenwirken?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Innensicht (White Box))
+**Result:** ✗ Incorrect
+
+## Question 19: Die Beschreibung der inneren Struktur eines Teilsystems muss womit vereinbar sein?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Mit der zugehörigen Außenansicht des Teilsystems)
+**Result:** ✗ Incorrect
+
+## Question 20: Welche der folgenden Beschreibungen passt zur Strukturdimension im Kontext der Wirtschaftsinformatik?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Anordnung und Statik)
+**Result:** ✗ Incorrect
+
+## Question 21: Welcher Begriff beschreibt die zeitliche Entwicklung und Veränderung von Systemen im Kontext der Wirtschaftsinformatik?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Verhalten)
+**Result:** ✗ Incorrect
+
+## Question 22: Auf welchen drei fundamentalen Konzepten basieren operative Systeme?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Information, Material, Energie)
+**Result:** ✗ Incorrect
+
+## Question 23: Was ist die grundlegende Aufgabe, die jedes System in Bezug auf seine Umgebung erfüllen muss?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Seinen Platz und seine Funktion zu finden)
+**Result:** ✗ Incorrect
+
+## Question 24: Auf welche Weise tauschen typischerweise zwei interagierende Systeme miteinander aus?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Informationen, materielle Güter oder Energie)
+**Result:** ✗ Incorrect
+
+## Question 25: Was kennzeichnet eine strukturorientierte Sichtweise auf ein Unternehmen primär?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Die formale Organisation und Ressourcenverwendung)
+**Result:** ✗ Incorrect
+
+## Question 26: Was betont eine verhaltensorientierte Definition eines Unternehmens stärker?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Verteilung von Rechten und Verantwortlichkeiten im Zeitverlauf)
+**Result:** ✗ Incorrect
+
+## Question 27: Welche Art von Interaktionen sind typisch für die Elemente eines komplexen Systems?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Nichtlineare Interaktionen)
+**Result:** ✗ Incorrect
+
+## Question 28: Was nimmt in einem System mit einer großen Anzahl spezialisierter und stark vernetzter Komponenten tendenziell zu?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Die Gesamtkomplexität des Systems)
+**Result:** ✗ Incorrect
+
+## Question 29: Warum wird in Bezug auf Systeme von organisierter Komplexität gesprochen?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Weil interagierende Systeme sich gegenseitig beeinflussen und anpassen)
+**Result:** ✗ Incorrect
+
+## Question 30: Welchen Vorteil bietet der Einsatz von Prinzipien, Methoden und Vorgehensweisen im Umgang mit komplexen Systemen?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Möglichkeit, komplexe Sachverhalte strukturiert zu analysieren und zu bearbeiten)
+**Result:** ✗ Incorrect
+
+## Question 31: Was ist ein wesentliches Merkmal eines adaptiven Systems?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Seine Fähigkeit, auf Veränderungen in seiner Umgebung zu reagieren)
+**Result:** ✗ Incorrect
+
+## Question 32: In welche grundlegenden Dimensionen kann der physische Raum unterteilt werden?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Höhe, Breite und Tiefe)
+**Result:** ✗ Incorrect
+
+## Question 33: Welche der folgenden Beziehungen beschreibt, dass eine kleinere Einheit ein Bestandteil einer größeren Einheit ist?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (ist_Teil_von-Beziehung)
+**Result:** ✗ Incorrect
+
+## Question 34: Welcher Begriff beschreibt die Beziehung zwischen einer spezifischen Ausprägung und einer allgemeineren Kategorie (z.B. Student ist ein Mensch)?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Generalisierung/Spezialisierung (ist_ein-Beziehung))
+**Result:** ✗ Incorrect
+
+## Question 35: Welche Art von Beziehung besteht zwischen zwei Einheiten, die auf der gleichen Ebene miteinander in Verbindung stehen, z.B. im Sinne einer Zusammenarbeit oder Interaktion?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Beziehung der Gleichordnung (ist_benachbart_mit-Beziehung))
+**Result:** ✗ Incorrect
+
+## Question 36: Welche logische Verknüpfung wird typischerweise mit einer Taxonomie (z.B. einer Generalisierungshierarchie) assoziiert?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (XOR-Verknüpfung)
+**Result:** ✗ Incorrect
+
+## Question 37: Welche logische Verknüpfung kennzeichnet typischerweise eine Partonomie (eine Hierarchie basierend auf der ist_Teil_von-Beziehung)?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (AND-Verknüpfung)
+**Result:** ✗ Incorrect
+
+## Question 38: Um ein komplexes System übersichtlich darzustellen, welche zwei Arten von Abstraktionshierarchien können primär genutzt werden?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Aggregation/Komposition (ist_Teil_von) und Generalisierung/Spezialisierung (ist_ein))
+**Result:** ✗ Incorrect
+
+## Question 39: Bei welcher Art von Abstraktionshierarchie stellen die untersten Elemente die spezifischsten und das oberste Element die allgemeinsten Eigenschaften dar?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Abstraktionshierarchie (Taxonomie oder Partonomie))
+**Result:** ✗ Incorrect
+
+## Question 40: Welche grundlegende Technik liegt dem Denken als Mittel zur Komplexitätsreduktion zugrunde?
+**Difficulty:** Leicht
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Unterscheidung zwischen Wesentlichem und Unwesentlichem)
+**Result:** ✗ Incorrect
+
+## Question 41: Was versteht man im Kontext der Softwaretechnik unter einem Artefakt?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Ein Teilergebnis oder ein Dokument, das im Laufe des Softwareentwicklungsprozesses entsteht.)
+**Result:** ✗ Incorrect
+
+## Question 42: Welche Aussage beschreibt die Hauptintention des Warum? in den W-Fragen zur Strukturierung eines Themenbereichs in der Softwaretechnik?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Ergründung der Ursachen und Beweggründe für die Notwendigkeit einer Betrachtung.)
+**Result:** ✗ Incorrect
+
+## Question 43: Das Konzept der Allgemeinen Systemtheorie nach von Bertalanffy hat welchen Anspruch?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Eine transdisziplinäre Untersuchung der allgemeinen Kriterien von Systemen und deren Interaktionen.)
+**Result:** ✗ Incorrect
+
+## Question 44: Was kennzeichnet die Beziehungen als strukturelle Eigenschaft eines Systems?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Die Art und Weise, wie die Elemente eines Systems miteinander in Verbindung stehen.)
+**Result:** ✗ Incorrect
+
+## Question 45: In welcher Form manifestieren sich die raumzeitlichen Dimensionen in Systemen und ihren Modellen?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Als (räumliche) Strukturen und (zeitliches) Verhalten.)
+**Result:** ✗ Incorrect
+
+## Question 46: Was ist die primäre Funktion eines CASE-Tools im Softwareentwicklungsprozess?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die schrittweise Umsetzung der Anforderungen von der Sprache der Stakeholder in die Sprache der Informatik (z.B. UML) durch Werkzeugunterstützung.)
+**Result:** ✗ Incorrect
+
+## Question 47: Was versteht man unter dem Abstraktionsniveau bei der Analyse von Systemelementen?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Den Grad der Detaillierung, mit dem ein Betrachter das System aufgrund seiner Fragestellung/Aufgabe untersucht.)
+**Result:** ✗ Incorrect
+
+## Question 48: Welche Aussage charakterisiert die hierarchische Ineinanderschachtelung von Systemen?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Ein komplexer Aufbau von Systemen entsteht dadurch, dass Elemente auf einer bestimmten Abstraktionsebene bei genauerer Betrachtung selbst wieder als Systeme identifiziert werden können.)
+**Result:** ✗ Incorrect
+
+## Question 49: Welche der folgenden Komponenten ist gemäß der Systemtheorie notwendig für die Lebensfähigkeit eines Systems und dient als Anleitung für Transformationen?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Information)
+**Result:** ✗ Incorrect
+
+## Question 50: Was beschreibt die Schnittstelle eines Systems im Kontext seiner Umgebung?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Die Grenze, an der das System mit seiner Umgebung interagiert und ein Austausch stattfindet.)
+**Result:** ✗ Incorrect
+
+## Question 51: Welche Perspektive auf ein System wird eingenommen, wenn man es als Black Box betrachtet?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Betrachtung des Systems hinsichtlich seiner Ein- und Ausgaben, ohne die internen Prozesse zu untersuchen.)
+**Result:** ✗ Incorrect
+
+## Question 52: Was kennzeichnet nichtlineare Interaktionen zwischen den Elementen eines komplexen Systems?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Reaktionen, die nicht direkt proportional zur Ursache sind und unerwartete Verhaltensmuster hervorbringen können.)
+**Result:** ✗ Incorrect
+
+## Question 53: Warum führt die Konkurrenz zwischen Systemen häufig zu einer Zunahme der Komplexität?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Weil sich Systeme an veränderte Bedingungen in ihrer Umgebung anpassen müssen, was oft zu zusätzlichen Strukturen und Prozessen führt.)
+**Result:** ✗ Incorrect
+
+## Question 54: Was versteht man unter verhaltenmäßiger Adaptivität eines Systems?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Die Fähigkeit, auf Veränderungen in der Umgebung durch Modifikation seiner Abläufe und Prozesse zu reagieren.)
+**Result:** ✗ Incorrect
+
+## Question 55: Welche der drei mentalen, logischen und orthogonalen Dimensionen zur Analyse der Anwendungsdomäne beschreibt die Beziehung, bei der eine Einheit Teil einer größeren Einheit ist?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (ist_Teil_von-Beziehung)
+**Result:** ✗ Incorrect
+
+## Question 56: Was ist der wesentliche Unterschied zwischen einer Taxonomie und einer Partonomie als Abstraktionshierarchien?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Eine Taxonomie stellt eine logische XOR-Beziehung dar, während eine Partonomie eine logische AND-Beziehung zwischen den Einheiten herstellt.)
+**Result:** ✗ Incorrect
+
+## Question 57: Was bedeutet Abstraktion im Kontext von Hierarchien in der Systemmodellierung?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Der Übergang von einer spezifischen zu einer allgemeineren Darstellung durch das Weglassen von Details.)
+**Result:** ✗ Incorrect
+
+## Question 58: Was kennzeichnet eine Heterarchie im Gegensatz zu einer Hierarchie?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Eine Gleichordnung der Elemente auf einer Ebene, wobei diese unterschiedliche Funktionen haben können.)
+**Result:** ✗ Incorrect
+
+## Question 59: Was versteht man unter einem Modul innerhalb einer heterarchischen Struktur?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Eine funktionale Einheit von Elementen, die innerhalb einer Ebene stärker miteinander in Beziehung stehen als zu anderen Elementen derselben Ebene.)
+**Result:** ✗ Incorrect
+
+## Question 60: Welches Prinzip liegt der Aussage zugrunde, dass Denken etwas mit Komplexitätsreduktion zu tun hat?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Die Verarbeitung von Rohdaten zu Informationen durch Unterscheidung zwischen Wesentlichem und Unwesentlichem, um Muster zu erkennen.)
+**Result:** ✗ Incorrect
+
+## Question 61: Welche grundlegende Vorgehensweise wird in der Softwaretechnik angewendet, um die Komplexität großer Systeme handhabbarer zu machen, indem die Dimensionen Raum und Zeit unterteilt werden?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Modularisierung in Ebenen/Inkremente bzw. Iterationen/Versionen/Sprints.)
+**Result:** ✗ Incorrect
+
+## Question 62: Was besagt das Prinzip der Modularität in der Softwaretechnik?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Der Grad, in dem ein System aus diskreten Komponenten besteht, so dass eine Änderung an einer Komponente minimale Auswirkungen auf andere Komponenten hat.)
+**Result:** ✗ Incorrect
+
+## Question 63: Welchen Vorteil bieten Muster (Patterns) in der Softwareentwicklung?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Sie beschreiben wiederkehrende Probleme und die Kernelemente ihrer Lösungen, die vielfältig angewendet werden können.)
+**Result:** ✗ Incorrect
+
+## Question 64: Was ist der Hauptzweck einer Methode im Kontext der Softwareentwicklung?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Eine planmäßig angewandte und begründete Vorgehensweise zur Erreichung festgelegter Ziele, oft durch die Erstellung von Modellen.)
+**Result:** ✗ Incorrect
+
+## Question 65: Welche der folgenden Dimensionen wird bei der Analyse virtueller Systeme in der Wirtschaftsinformatik betrachtet und beschäftigt sich mit der Verallgemeinerung/Konkretisierung von Begriffen?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Die Verallgemeinerung/Konkretisierung von Begriffen (ist_ein-Beziehung).)
+**Result:** ✗ Incorrect
+
+## Question 66: Was ist die Hauptaufgabe eines Aktors im Kontext der Systemmodellierung?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die aktive Interaktion mit einem System, indem er selbstständig Aktionen auslösen kann.)
+**Result:** ✗ Incorrect
+
+## Question 67: Was unterscheidet eine Rolle eines Objekts von dem Kern des Objekts?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Der Kern beschreibt die fundamentalen Eigenschaften, während die Rolle spezifische Attribute und Verhaltensweisen in einem bestimmten Kontext einer Beziehung hinzufügt.)
+**Result:** ✗ Incorrect
+
+## Question 68: Welche der vier grundlegenden Kontrollstrukturen in der Informatik beschreibt die wiederholte Ausführung von Aktionen?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Iteration)
+**Result:** ✗ Incorrect
+
+## Question 69: Was ist der Zweck eines Vorgehensmodells (Prozessmodells) in der Softwareentwicklung?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Festlegung eines organisatorischen Rahmens, der beschreibt, welche Aktivitäten in welcher Reihenfolge von welchen Rollen erledigt werden und welche Ergebnisse dabei entstehen.)
+**Result:** ✗ Incorrect
+
+## Question 70: Was ist ein charakteristisches Merkmal des Wasserfall-Modells in der Softwareentwicklung?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Eine sequenzielle Abfolge von Phasen, bei der eine Phase abgeschlossen sein muss, bevor die nächste beginnt.)
+**Result:** ✗ Incorrect
+
+## Question 71: Welche der drei wesentlichen Eigenschaften eines Modells nach Stachowiak besagt, dass es eine (logische) Beziehung zwischen der betrachteten Welt und dem Modell gibt?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Abbildungsfunktion)
+**Result:** ✗ Incorrect
+
+## Question 72: Was ist der Hauptzweck von Modellen im Umgang mit komplexen Systemen?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Reduktion von Komplexität durch das Ignorieren irrelevanter Details, um ein vereinfachtes Bild des Systems zu erhalten.)
+**Result:** ✗ Incorrect
+
+## Question 73: Welche Rolle spielt eine Notation im Kontext der Modellierung?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Ein System von Schrift- und Symbolzeichen zur Darstellung eines Modells.)
+**Result:** ✗ Incorrect
+
+## Question 74: Was ist gemäß der Definition im Material der Unterschied zwischen Daten und Information?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Daten sind Zeichen, die einem Alphabet zugeordnet sind, während Information durch die Anreicherung von Daten mit zusätzlichem Kontext entsteht.)
+**Result:** ✗ Incorrect
+
+## Question 75: Welche der folgenden Sprachkategorien wird im Softwareentwicklungsprozess verwendet, um die fachliche Anwendungsdomäne zu beschreiben?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Domain language (Fachsprache))
+**Result:** ✗ Incorrect
+
+## Question 76: Was ist der primäre Zweck der Unified Modeling Language (UML) im Softwareentwicklungsprozess?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Eine standardisierte grafische Modellierungssprache zur Visualisierung, Spezifikation, Konstruktion und Dokumentation von Artefakten eines Softwaresystems.)
+**Result:** ✗ Incorrect
+
+## Question 77: Was beschreibt die Abbildungsfunktion eines Modells im Kontext des Requirements Engineerings?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Die Beziehung zwischen der realen Welt und der mentalen Vorstellung bzw. dem formalen Modell der Anforderungen.)
+**Result:** ✗ Incorrect
+
+## Question 78: Warum ist die Definition von Systemgrenzen ein wichtiger erster Schritt in der Systemanalyse im Requirements Engineering?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Um klar zu definieren, was zum System gehört und was zur Umgebung, um den Untersuchungsbereich abzugrenzen.)
+**Result:** ✗ Incorrect
+
+## Question 79: Was ist der Hauptunterschied zwischen einem Lastenheft und einem Pflichtenheft im plan-basierten Vorgehensmodell?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Das Lastenheft wird in der Fachsprache der Wirtschaft verfasst und enthält eine grobe Anforderungsbeschreibung, während das Pflichtenheft in der Fachsprache der Informatik detaillierte und semi-formale Anforderungen enthält.)
+**Result:** ✗ Incorrect
+
+## Question 80: Was ist das primäre Ziel einer Durchführbarkeitsstudie in der Planungsphase des Requirements Engineerings?
+**Difficulty:** Mittel
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Prüfung der fachlichen, ökonomischen und personellen Realisierbarkeit des geplanten Systems, um eine Entscheidung über das weitere Vorgehen zu ermöglichen.)
+**Result:** ✗ Incorrect
+
+## Question 81: Welche der folgenden Aussagen beschreibt die komplexeste Herausforderung bei der Abstimmung zwischen dem Lastenheft, erstellt in der Fachsprache der Wirtschaft, und dem Pflichtenheft, verfasst in der Fachsprache der Informatik?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die potenziellen Interpretationsunterschiede und der Verlust von semantischer Genauigkeit beim Übergang zwischen den Domänen.)
+**Result:** ✗ Incorrect
+
+## Question 82: In welchem Szenario wäre der Einsatz eines CASE-Tools mit Roundtrip Engineering-Funktionalität besonders vorteilhaft im Vergleich zu Werkzeugen, die nur Forward- oder Reverse-Engineering unterstützen?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Bei iterativen Entwicklungsprozessen, bei denen sich Modelle und Code häufig parallel ändern und synchronisiert werden müssen.)
+**Result:** ✗ Incorrect
+
+## Question 83: Betrachten Sie ein komplexes Softwaresystem. Welche Implikation hat eine hohe Anzahl von Aktoren in einem Use-Case-Diagramm typischerweise auf die Komplexität der Anforderungsanalyse?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Eine größere Vielfalt an Stakeholdern und deren Bedürfnisse erfordern eine umfassendere Ermittlung und Abstimmung der Anforderungen.)
+**Result:** ✗ Incorrect
+
+## Question 84: In einem Aktivitätsdiagramm werden parallele Abläufe durch Parallelisierungsknoten und Synchronisationsknoten dargestellt. Welche potenzielle Schwierigkeit kann entstehen, wenn die Anzahl der eingehenden Aktivitätsstränge in einem Synchronisationsknoten nicht mit der tatsächlichen Anzahl der parallel ausgeführten Stränge übereinstimmt?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Es kann zu einem Deadlock kommen, bei dem der Kontrollfluss auf die Beendigung eines nicht existierenden Strangs wartet.)
+**Result:** ✗ Incorrect
+
+## Question 85: Der Unterschied zwischen Aggregation und Komposition im UML-Klassendiagramm liegt in der Stärke der Abhängigkeit der Teile vom Ganzen. In welchem der folgenden Modellierungsszenarien wäre die Verwendung einer Komposition anstelle einer Aggregation zwingender?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Ein 'Gebäude' enthält mehrere 'Räume', die ohne das Gebäude nicht existieren können.)
+**Result:** ✗ Incorrect
+
+## Question 86: Die Multiplizität einer Assoziation zwischen zwei Klassen im UML-Diagramm gibt die Anzahl der Objekte an, die in Beziehung zueinander stehen können. Welche Aussage impliziert eine optionale Beziehung auf beiden Seiten einer binären Assoziation (z.B. 0..* auf beiden Seiten)?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Es ist möglich, dass Objekte beider Klassen existieren, ohne dass eine Instanz der Beziehung zwischen ihnen besteht.)
+**Result:** ✗ Incorrect
+
+## Question 87: In der objektorientierten Modellierung können Schnittstellen (Interfaces) definiert werden. Welche der folgenden Designentscheidungen würde die Flexibilität und Erweiterbarkeit eines Softwaresystems unter Verwendung von Schnittstellen am meisten fördern?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Die Verwendung von Schnittstellen, um Verträge für das Verhalten von Objekten zu definieren, ohne die konkrete Implementierung vorzugeben.)
+**Result:** ✗ Incorrect
+
+## Question 88: Betrachten Sie das Konzept der Rollenmodellierung im Kontext von Beziehungen zwischen Objekten. Welches Risiko besteht, wenn die Unterscheidung zwischen einer 'Kern-Rolle'-Beziehung und einer 'Generalisierung-Spezialisierung'-Beziehung nicht präzise erfolgt?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die semantische Bedeutung der Beziehungen wird falsch interpretiert, was zu Inkonsistenzen im Modell und potenziellen Fehlern in der Implementierung führen kann.)
+**Result:** ✗ Incorrect
+
+## Question 89: Die Überführung eines UML-Klassendiagramms in Java-Code erfordert die Berücksichtigung verschiedener Aspekte. Welche Herausforderung entsteht typischerweise bei der Abbildung von n-m-Assoziationen (viele-zu-viele-Beziehungen) in einer objektorientierten Programmiersprache wie Java?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Es ist notwendig, zusätzliche Datenstrukturen (z.B. Listen oder Mengen) zu verwenden, um die Beziehungen zwischen den Objekten zu verwalten, was die Komplexität der Implementierung erhöht.)
+**Result:** ✗ Incorrect
+
+## Question 90: Im Kontext der Softwareentwicklung und der Notwendigkeit zur Abstraktion komplexer Systeme: Welche grundlegende Einschränkung menschlicher Kognition wird durch den Einsatz von Modellen und verschiedenen Abstraktionsebenen adressiert?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Die limitierte Fähigkeit, große Mengen an unstrukturierter Information gleichzeitig zu verarbeiten und zu verstehen.)
+**Result:** ✗ Incorrect
+
+## Question 91: Die W-Fragen dienen zur Strukturierung eines Themenbereichs in der Systemanalyse. Welche spezifische Herausforderung soll durch die explizite Frage nach dem 'Warum?' (Grund/Ursache) im Kontext sich dynamisch verändernder Systeme adressiert werden?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Das Verständnis der historischen Entwicklung und der zugrundeliegenden Triebkräfte für die gegenwärtige Komplexität des zu analysierenden Ausschnitts der realen Welt.)
+**Result:** ✗ Incorrect
+
+## Question 92: Die Allgemeine Systemtheorie betont die Betrachtung der 'Welt' als eine Hierarchie interagierender Systeme. Welche methodische Konsequenz ergibt sich aus dieser Perspektive für die Analyse eines spezifischen Software- oder Wirtschaftsinformatiksystems?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Es ist entscheidend, die relevanten übergeordneten Systeme und Subsysteme sowie die Schnittstellen und Interaktionen des betrachteten Systems zu identifizieren und zu analysieren.)
+**Result:** ✗ Incorrect
+
+## Question 93: Das Konzept des 'Abstraktionsniveaus' ist zentral für die Analyse komplexer Systeme. Welches Risiko besteht, wenn das gewählte Abstraktionsniveau bei der Untersuchung eines Systems nicht angemessen an die spezifische Fragestellung oder Aufgabe angepasst ist?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Relevante Details können übersehen werden (bei zu hohem Abstraktionsniveau) oder die Analyse wird durch irrelevante Details überladen (bei zu niedrigem Abstraktionsniveau).)
+**Result:** ✗ Incorrect
+
+## Question 94: Die Unterscheidung zwischen der Struktur- und Verhaltensdimension eines Systems ist fundamental. Welche Herausforderung entsteht bei der Modellierung eines Wirtschaftsinformatiksystems, wenn die Wechselwirkungen zwischen strukturellen Elementen und den sie beeinflussenden oder von ihnen beeinflussten Verhaltenselementen nicht explizit berücksichtigt werden?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Das resultierende Modell ist rein statisch und bildet die dynamischen Aspekte des Systems unzureichend ab.)
+**Result:** ✗ Incorrect
+
+## Question 95: Das Prinzip der Adaptivität ist entscheidend für die Lebensfähigkeit von Systemen in dynamischen Umgebungen. Welche grundlegende Spannung entsteht typischerweise bei dem Versuch, sowohl strukturelle als auch verhaltensmäßige Adaptivität in einem komplexen System zu realisieren?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Der Bedarf an Flexibilität und Anpassungsfähigkeit (Adaptivität) kann mit dem Bedarf an Stabilität und Vorhersagbarkeit (durch feste Strukturen und Prozesse) in Konflikt geraten.)
+**Result:** ✗ Incorrect
+
+## Question 96: Die drei mentalen, logischen und orthogonalen Dimensionen ('ist_Teil_von', 'ist_ein', 'ist_benachbart_mit') dienen der Analyse der Anwendungsdomäne. Welche methodische Herausforderung entsteht bei dem Versuch, diese drei Dimensionen gleichzeitig in einem zweidimensionalen UML-Diagramm umfassend darzustellen?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Es ist nicht möglich, alle drei Dimensionen gleichzeitig verlustfrei in einem 2D-Diagramm abzubilden.)
+**Result:** ✗ Incorrect
+
+## Question 97: Bei der Verwendung von Abstraktionshierarchien (Taxonomie und Partonomie) zur Darstellung komplexer Systeme: Welches grundlegende Problem kann entstehen, wenn die Kriterien für die Aggregation ('ist_Teil_von') oder Generalisierung ('ist_ein') nicht klar und konsistent definiert sind?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Die resultierenden Hierarchien sind semantisch unklar, führen zu Mehrdeutigkeiten und erschweren das Verständnis des Systems.)
+**Result:** ✗ Incorrect
+
+## Question 98: Das Prinzip der Modularisierung dient der Reduktion von Systemkomplexität. Welche potenziellen Nachteile oder Herausforderungen können mit einer übermäßigen Modularisierung eines Softwaresystems einhergehen?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Erhöhte Komplexität in den Schnittstellen und der Kommunikation zwischen den Modulen, potenziell mit Performance-Einbußen.)
+**Result:** ✗ Incorrect
+
+## Question 99: Muster (Patterns) in der Softwareentwicklung bieten bewährte Lösungen für wiederkehrende Probleme. Welche Gefahr besteht bei der unkritischen Anwendung von Mustern, ohne den spezifischen Kontext des Problems ausreichend zu berücksichtigen?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Das Design des Systems kann unnötig komplex werden ('Patternitis'), ohne einen entsprechenden Nutzen zu stiften.)
+**Result:** ✗ Incorrect
+
+## Question 100: Vorgehensmodelle strukturieren den Softwareentwicklungsprozess zeitlich. Welche grundlegende Annahme des Wasserfallmodells kann in dynamischen Projekten mit sich häufig ändernden Anforderungen zu signifikanten Problemen führen?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Die Annahme, dass alle Anforderungen zu Beginn des Projekts vollständig und stabil sind und die Phasen sequenziell und abgeschlossen durchlaufen werden können.)
+**Result:** ✗ Incorrect
+
+## Question 101: Die Abbildungsfunktion eines Modells nach Stachowiak besagt, dass es eine Beziehung zwischen der 'Welt' und dem Modell gibt. Welche Herausforderung entsteht im Requirements Engineering, wenn das mentale Modell eines Stakeholders stark von der 'realen Welt' abweicht oder fehlerhaft ist?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Das resultierende formale Modell wird die tatsächlichen Bedürfnisse und Anforderungen nicht adäquat widerspiegeln.)
+**Result:** ✗ Incorrect
+
+## Question 102: Die Definition von Systemgrenzen ist ein kritischer erster Schritt in der Systemanalyse. Welches Risiko besteht, wenn die Systemgrenzen zu eng gefasst werden?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Wichtige externe Abhängigkeiten und Interaktionen mit der Umgebung des Systems werden möglicherweise übersehen.)
+**Result:** ✗ Incorrect
+
+## Question 103: Der Unterschied zwischen User Requirements und System Requirements im Requirements Engineering liegt im Detailgrad und der Zielgruppe. Welche Konsequenz kann es haben, wenn System Requirements direkt in der Fachsprache der Anwender formuliert werden?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Es kann zu Interpretationsspielraum und Ungenauigkeiten kommen, die die technische Umsetzung erschweren.)
+**Result:** ✗ Incorrect
+
+## Question 104: Die SMART-Kriterien helfen bei der Formulierung von Anforderungen. Welches spezifische Problem soll durch das Kriterium 'Messbar' (Measurable) adressiert werden?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Ermöglichung der Überprüfung und Validierung, ob die Anforderung im entwickelten System erfüllt wurde.)
+**Result:** ✗ Incorrect
+
+## Question 105: Im V-Modell der Softwareentwicklung erfolgt eine Validierung der entwickelten Komponenten und des Gesamtsystems gegen die Anforderungen. Gegen welche spezifischen Dokumente oder Artefakte wird typischerweise im 'Systemtest' validiert?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Gegen das Pflichtenheft, das die detaillierten funktionalen und nicht-funktionalen Systemanforderungen enthält.)
+**Result:** ✗ Incorrect
+
+## Question 106: Die Unified Modeling Language (UML) ist eine grafische Modellierungssprache. Welche grundlegende Herausforderung besteht bei der Verwendung von UML zur Beschreibung sehr großer und komplexer Softwaresysteme?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die resultierenden UML-Diagramme können sehr umfangreich und schwer zu überblicken sein, was die Kommunikation und das Verständnis erschwert.)
+**Result:** ✗ Incorrect
+
+## Question 107: Ein Fachmodell im Kontext der Softwareentwicklung dient der Darstellung der Konzepte und Beziehungen im Anwendungsbereich. Welche potenzielle Gefahr besteht, wenn das Fachmodell zu stark von technischen Implementierungsüberlegungen beeinflusst wird?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Flexibilität des Modells zur Anpassung an fachliche Änderungen kann eingeschränkt werden.)
+**Result:** ✗ Incorrect
+
+## Question 108: Die Schnittstelle (Interface) in der objektorientierten Programmierung definiert ein 'Was?' ein Typ leisten muss. Welche Designüberlegung ist entscheidend, um sicherzustellen, dass eine Schnittstelle effektiv zur Entkopplung von Komponenten beiträgt?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Schnittstelle sollte nur die absolut notwendigen Methoden definieren und stabil gegenüber Änderungen der Implementierung bleiben.)
+**Result:** ✗ Incorrect
+
+## Question 109: Die Konzepte 'Information', 'Daten' und 'Wissen' stehen in einer Beziehung zueinander. Welche spezifische Rolle spielt der 'Kontext' bei der Transformation von Daten zu Information?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Kontext ermöglicht die Interpretation von Daten und verleiht ihnen Bedeutung.)
+**Result:** ✗ Incorrect
+
+## Question 110: Die Wahl der geeigneten Modellierungssprache (z.B. UML, BPMN) hängt vom Zweck des Modells ab. In welchem Szenario wäre die Verwendung von BPMN (Business Process Model and Notation) anstelle von UML-Aktivitätsdiagrammen primär zu empfehlen?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Zur Darstellung und Analyse von Geschäftsprozessen über verschiedene Organisationseinheiten und Systeme hinweg.)
+**Result:** ✗ Incorrect
+
+## Question 111: Die Technik des 'Refactorings' wird in der Softwareentwicklung eingesetzt, um die Struktur von Code zu verbessern, ohne sein externes Verhalten zu ändern. In welcher Phase des Softwareentwicklungslebenszyklus ist Refactoring typischerweise am effektivsten und warum?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Während der Implementierungsphase, wenn Code-Smells oder Redundanzen identifiziert werden, um die Codequalität und Wartbarkeit frühzeitig zu sichern.)
+**Result:** ✗ Incorrect
+
+## Question 112: Das Prinzip 'Keep It Simple, Stupid' (KISS) ist eine Richtlinie im Softwaredesign. Welche potenziellen negativen Auswirkungen kann ein Design haben, das diesem Prinzip nicht folgt und unnötige Komplexität aufweist?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Wartbarkeit und Verständlichkeit des Systems nehmen ab, das Risiko von Fehlern steigt.)
+**Result:** ✗ Incorrect
+
+## Question 113: Im Kontext der Software-Architektur werden verschiedene Stile und Muster eingesetzt. Welches grundlegende Ziel wird durch die Verwendung einer Schichtenarchitektur (Layered Architecture) primär verfolgt?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Reduktion der Abhängigkeiten zwischen verschiedenen Funktionsebenen des Systems, um Wartbarkeit und Austauschbarkeit zu verbessern.)
+**Result:** ✗ Incorrect
+
+## Question 114: Die Qualität von Software wird durch verschiedene nicht-funktionale Anforderungen bestimmt (z.B. Performance, Usability, Security). Welche Herausforderung entsteht typischerweise bei dem Versuch, mehrere nicht-funktionale Anforderungen gleichzeitig und optimal zu erfüllen?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Es können Zielkonflikte zwischen verschiedenen nicht-funktionalen Anforderungen entstehen (z.B. hohe Security kann die Usability beeinträchtigen).)
+**Result:** ✗ Incorrect
+
+## Question 115: Im agilen Vorgehensmodell wird der Product Backlog als zentrale Artefakt für die Anforderungen verwendet. Welcher grundlegende Unterschied besteht in der Art und Weise, wie Anforderungen im Product Backlog im Vergleich zum Pflichtenheft (in einem plan-basierten Ansatz) detailliert werden?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Anforderungen im Product Backlog werden in der Regel 'just-in-time' und in der notwendigen Detailtiefe für die nächste Iteration (Sprint) detailliert, während das Pflichtenheft eine umfassende Spezifikation zu Beginn anstrebt.)
+**Result:** ✗ Incorrect
+
+## Question 116: Die Kommunikation zwischen verschiedenen Rollen (z.B. Fachseite und Entwicklungsteam) ist entscheidend für den Erfolg eines Softwareprojekts. Welche primäre Herausforderung entsteht aufgrund der unterschiedlichen Fachsprachen ('Domain Language' vs. 'Computer Science Language')?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Die Notwendigkeit einer präzisen Übersetzung und Interpretation von Begriffen, um Missverständnisse und semantischen Verlust zu vermeiden.)
+**Result:** ✗ Incorrect
+
+## Question 117: Im Kontext der Systemanalyse wird zwischen der 'Black-Box'- und der 'White-Box'-Perspektive unterschieden. In welcher Phase des Softwareentwicklungslebenszyklus ist die 'White-Box'-Perspektive typischerweise am relevantesten?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Während des Systementwurfs und der Implementierung, um die interne Struktur und das Verhalten der Komponenten zu gestalten und zu überprüfen.)
+**Result:** ✗ Incorrect
+
+## Question 118: Die evolutionäre Natur komplexer Systeme führt häufig zu 'organisierter Komplexität'. Welcher grundlegende Mechanismus treibt diese Zunahme an Komplexität aus der Sicht eines einzelnen Systems in seiner Interaktion mit der Systemumgebung?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** B (Die Notwendigkeit für ein System, sich an neue Anforderungen aus seiner Umgebung anzupassen, was oft zu zusätzlichen Strukturen und Prozessen führt.)
+**Result:** ✗ Incorrect
+
+## Question 119: Die Unterscheidung zwischen 'struktureller' und 'verhaltensmäßiger' Adaptivität eines Systems ist wichtig. Geben Sie ein Beispiel für eine verhaltensmäßige Adaptivität in einem E-Commerce-System, das nicht die Änderung der Datenbankstruktur oder der Benutzeroberfläche beinhaltet.
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** A (Die dynamische Anpassung der Rabattstrategien basierend auf dem Kaufverhalten der Kunden.)
+**Result:** ✗ Incorrect
+
+## Question 120: Die drei fundamentalen Ressourcen für die Lebensfähigkeit von Systemen sind Information, Material und Energie. Welche spezifische Rolle spielt 'Information' im Kontext der Steuerung und Aufrechterhaltung der Funktionalität eines Systems?
+**Difficulty:** Schwer
+**Model Answer:** Error 402: Could not get a response from the model.
+**Detailed Explanation:** Error 402: Could not get a response from the model.
+**Correct Answer:** C (Die Anleitung für die Transformation von Materie durch Energie.)
+**Result:** ✗ Incorrect
+
+## Summary by Difficulty Level
+
+**Leicht:** 0/40 (0.00%)
+**Mittel:** 0/40 (0.00%)
+**Schwer:** 0/40 (0.00%)
+
+**Overall:** 0/120 (0.00%)

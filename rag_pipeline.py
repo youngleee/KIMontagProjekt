@@ -1,107 +1,121 @@
 import os
 import requests
+import json
+import time
+import argparse
 from dotenv import load_dotenv
 from pathlib import Path
-import PyPDF2
-import docx
-import pptx
 import re
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+import concurrent.futures
 
-# Load environment variable
+# Load environment variables
 load_dotenv()
-
-# Hugging Face API Setup for LLM
-HF_API_URL = "https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3-8B-Instruct"
-HF_API_TOKEN = os.getenv("HF_API_TOKEN")
-headers = {"Authorization": f"Bearer {HF_API_TOKEN}"}
 
 # Initialize embeddings for vector database
 embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
-# File Processing Functions
-def extract_text_from_pdf(file_path):
-    """Extract text from PDF files."""
-    text = ""
-    with open(file_path, "rb") as file:
-        reader = PyPDF2.PdfReader(file)
-        for page in reader.pages:
-            text += page.extract_text() + "\n"
-    return text
-
-def extract_text_from_docx(file_path):
-    """Extract text from DOCX files."""
-    doc = docx.Document(file_path)
-    text = ""
-    for paragraph in doc.paragraphs:
-        text += paragraph.text + "\n"
-    return text
-
-def extract_text_from_pptx(file_path):
-    """Extract text from PowerPoint files."""
-    prs = pptx.Presentation(file_path)
-    text = ""
-    for slide in prs.slides:
-        for shape in slide.shapes:
-            if hasattr(shape, "text"):
-                text += shape.text + "\n"
-    return text
-
-def extract_text_from_txt(file_path):
-    """Extract text from TXT files."""
-    with open(file_path, "r", encoding="utf-8") as file:
-        return file.read()
-
-def process_course_materials(directory_path):
-    """Process all supported files in the directory and extract text."""
-    all_text = ""
-    file_types = {
-        ".pdf": extract_text_from_pdf,
-        ".docx": extract_text_from_docx,
-        ".pptx": extract_text_from_pptx,
-        ".txt": extract_text_from_txt
-    }
+# Free open-source LLM API configurations
+class LLMProvider:
+    def __init__(self, name):
+        self.name = name
     
-    for file_path in Path(directory_path).glob("**/*"):
-        if file_path.suffix.lower() in file_types:
-            print(f"Processing {file_path}")
+    def query(self, prompt, mc_mode=False, max_retries=3, retry_delay=5):
+        raise NotImplementedError("Subclasses must implement this method")
+
+class HuggingFaceLLM(LLMProvider):
+    def __init__(self, model_name="mistralai/Mistral-7B-Instruct-v0.2"):
+        super().__init__(f"huggingface-{model_name.split('/')[-1]}")
+        self.api_url = f"https://api-inference.huggingface.co/models/{model_name}"
+        self.api_token = os.getenv("HF_API_TOKEN")
+        if not self.api_token:
+            raise ValueError("HF_API_TOKEN environment variable not set")
+        self.headers = {"Authorization": f"Bearer {self.api_token}"}
+    
+    def query(self, prompt, mc_mode=False, max_retries=3, retry_delay=2):
+        """Query the Hugging Face model with retry mechanism"""
+        retries = 0
+        while retries <= max_retries:
             try:
-                text = file_types[file_path.suffix.lower()](file_path)
-                all_text += f"\n\n--- Document: {file_path.name} ---\n\n{text}"
+                response = requests.post(
+                    self.api_url, 
+                    headers=self.headers, 
+                    json={"inputs": prompt}
+                )
+                
+                if response.status_code == 200:
+                    api_response = response.json()
+                    if api_response and isinstance(api_response, list) and "generated_text" in api_response[0]:
+                        generated_text = api_response[0]["generated_text"].strip()
+                        
+                        # Remove the prompt from the beginning if present
+                        if generated_text.startswith(prompt):
+                            generated_text = generated_text[len(prompt):].strip()
+                        
+                        # For multiple choice, strictly extract only the letter
+                        if mc_mode:
+                            # Find the first occurrence of A, B, or C in the response
+                            match = re.search(r'\b([A-C])\b', generated_text)
+                            if match:
+                                return match.group(1)  # Return just the letter
+                            
+                            # If no clear match, try to find any occurrence of A, B, or C
+                            match = re.search(r'([A-C])', generated_text)
+                            if match:
+                                return match.group(1)  # Return just the letter
+                            
+                            # If still no match, return an error indicator
+                            print(f"WARNING: Could not extract a valid answer (A, B, C) from: '{generated_text}'")
+                            return "?"
+                        
+                        return generated_text
+                    else:
+                        print("Error: Invalid API response format.")
+                        return "Error: Could not generate a valid response."
+                elif response.status_code == 500 or "busy" in response.text.lower():
+                    # This is where we handle Error 500 with retries
+                    retries += 1
+                    if retries <= max_retries:
+                        print(f"Error 500: Model busy. Retrying ({retries}/{max_retries}) after {retry_delay} seconds...")
+                        time.sleep(retry_delay)
+                        # Increase delay for subsequent retries (exponential backoff)
+                        retry_delay = min(retry_delay * 1.5, 10)
+                    else:
+                        print(f"Error: Failed after {max_retries} retries.")
+                        return f"Error 500: Could not get a response from the model."
+                else:
+                    print(f"Error {response.status_code}: {response.text}")
+                    return f"Error {response.status_code}: Could not get a response from the model."
             except Exception as e:
-                print(f"Error processing {file_path}: {e}")
-    
-    return all_text
+                print(f"Exception during API call: {e}")
+                return f"Error: {str(e)}"
 
-def build_vector_database(text):
-    """Build a vector database from the text for semantic search."""
-    # Create a text splitter to divide content into smaller chunks
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200
-    )
-    chunks = text_splitter.split_text(text)
-    
-    # Create vector store
-    vector_store = FAISS.from_texts(chunks, embedding_model)
-    
-    # Save the vector store to disk (optional)
-    vector_store.save_local("faiss_index")
-    
-    return vector_store
+# Keeping just the Hugging Face LLM implementation since we're using 3 Hugging Face models
 
 def load_vector_database():
     """Load the vector database from disk."""
-    vector_store = FAISS.load_local("faiss_index", embedding_model)
+    vector_store = FAISS.load_local("faiss_index", embedding_model, allow_dangerous_deserialization=True)
     return vector_store
 
+def retrieve_relevant_contexts(vector_store, question, k=3):
+    """Retrieve the most relevant text passages for the question."""
+    # Analyze the question
+    analysis = analyze_question(question)
+    
+    # Get the k most similar contexts from the vector store
+    documents = vector_store.similarity_search(
+        question, 
+        k=k
+    )
+    
+    # Extract the text from the documents
+    contexts = [doc.page_content for doc in documents]
+    
+    return contexts, analysis
+
 def analyze_question(question):
-    """
-    Analyze the question to determine its intent and extract key entities.
-    This is a basic implementation - could be enhanced with more sophisticated NLP.
-    """
+    """Analyze the question to determine its intent and extract key entities."""
     # Simple keyword extraction
     keywords = re.findall(r'\b[A-Za-z][A-Za-z-]+\b', question.lower())
     # Remove common stop words
@@ -131,80 +145,8 @@ def analyze_question(question):
         'original_question': question
     }
 
-def retrieve_relevant_contexts(vector_store, question, k=3):
-    """
-    Retrieve the most relevant text passages for the question.
-    
-    Args:
-        vector_store: The FAISS vector store containing the document embeddings
-        question: The user's question
-        k: Number of documents to retrieve
-        
-    Returns:
-        List of retrieved documents
-    """
-    # Analyze the question
-    analysis = analyze_question(question)
-    
-    # Get the k most similar contexts from the vector store
-    documents = vector_store.similarity_search(
-        question, 
-        k=k
-    )
-    
-    # Extract the text from the documents
-    contexts = [doc.page_content for doc in documents]
-    
-    return contexts, analysis
-
-def query_llm(prompt):
-    """
-    Query the language model (Llama 3) to generate a response.
-    
-    Args:
-        prompt: The formatted prompt for the model
-        
-    Returns:
-        The model's response
-    """
-    try:
-        response = requests.post(
-            HF_API_URL, 
-            headers=headers, 
-            json={"inputs": prompt}
-        )
-        
-        if response.status_code == 200:
-            api_response = response.json()
-            if api_response and isinstance(api_response, list) and "generated_text" in api_response[0]:
-                generated_text = api_response[0]["generated_text"].strip()
-                
-                # Remove the prompt from the beginning if present
-                if generated_text.startswith(prompt):
-                    generated_text = generated_text[len(prompt):].strip()
-                
-                return generated_text
-            else:
-                print("Error: Invalid API response format.")
-                return "Error: Could not generate a valid response."
-        else:
-            print(f"Error {response.status_code}: {response.text}")
-            return f"Error {response.status_code}: Could not get a response from the model."
-    except Exception as e:
-        print(f"Exception during API call: {e}")
-        return f"Error: {str(e)}"
-
 def format_rag_prompt(question, contexts):
-    """
-    Format the RAG prompt by combining the question and retrieved contexts.
-    
-    Args:
-        question: The user's question
-        contexts: List of retrieved document contexts
-        
-    Returns:
-        Formatted prompt for the language model
-    """
+    """Format the RAG prompt by combining the question and retrieved contexts."""
     context_text = "\n\n".join([f"Context {i+1}:\n{context}" for i, context in enumerate(contexts)])
     
     prompt = f"""You are an educational assistant that helps answer questions based on course materials.
@@ -218,101 +160,209 @@ Answer: """
     
     return prompt
 
-def generate_answer(question, contexts, analysis):
-    """
-    Generate an answer based on the retrieved contexts.
+def format_mc_prompt(question, options):
+    """Format a multiple-choice prompt for the model that strictly enforces a single-letter response."""
+    options_text = "\n".join([f"{chr(65+i)}) {option}" for i, option in enumerate(options)])
     
-    Args:
-        question: The user's question
-        contexts: List of retrieved document contexts
-        analysis: Analysis of the question
-        
-    Returns:
-        Generated answer
-    """
-    prompt = format_rag_prompt(question, contexts)
-    answer = query_llm(prompt)
-    
-    # Post-processing of the answer (optional)
-    # You could implement additional filtering, fact-checking, etc. here
-    
-    return answer
+    prompt = f"""You are answering a multiple-choice question. 
 
-def rag_pipeline(question, vector_store=None):
-    """
-    The complete RAG pipeline:
-    1. Analyze the question
-    2. Retrieve relevant contexts
-    3. Generate answer using LLM with retrieved contexts
+EXTREMELY IMPORTANT: Your ENTIRE response must consist of ONLY a SINGLE LETTER - either A, B, or C. 
+Do not include ANY explanations, reasoning, punctuation, or additional text of ANY kind.
+Do not include the parentheses or any other characters.
+Invalid answer formats: "The answer is A", "A.", "(A)", "Option A", etc.
+Valid answer format: just "A" or just "B" or just "C"
+
+Question: {question}
+
+Options:
+{options_text}
+
+Your answer (ONLY ONE LETTER, A, B, or C): """
     
-    Args:
-        question: The user's question
-        vector_store: Optional pre-loaded vector store
+    return prompt
+
+def generate_answer(llm, question, contexts, analysis, answer_options=None):
+    """Generate an answer based on the retrieved contexts using the specified LLM."""
+    if answer_options:
+        # For multiple choice questions
+        mc_prompt = format_mc_prompt(question, answer_options)
+        direct_mc_answer = llm.query(mc_prompt, mc_mode=True)
         
-    Returns:
-        Generated answer
-    """
-    # Load vector store if not provided
-    if vector_store is None:
-        try:
-            vector_store = load_vector_database()
-        except:
-            print("Error: Vector database not found. Please build it first.")
-            return "Error: Knowledge base not available."
-    
+        # For detailed explanation (for logging purposes only)
+        rag_prompt = format_rag_prompt(question, contexts)
+        detailed_answer = llm.query(rag_prompt)
+        
+        return direct_mc_answer, detailed_answer
+    else:
+        # For open-ended questions
+        prompt = format_rag_prompt(question, contexts)
+        answer = llm.query(prompt)
+        return answer, None
+
+def process_with_llm(llm, question, vector_store, answer_options=None):
+    """Process a question with a specific LLM."""
     # Retrieve relevant contexts
     contexts, analysis = retrieve_relevant_contexts(vector_store, question)
     
     # Generate answer
-    answer = generate_answer(question, contexts, analysis)
+    answer, detailed_answer = generate_answer(llm, question, contexts, analysis, answer_options)
     
     return {
         'question': question,
         'answer': answer,
+        'detailed_answer': detailed_answer,
         'contexts': contexts,
         'analysis': analysis
     }
 
+def load_questions_from_json(json_file_path):
+    """Load questions from a JSON file."""
+    with open(json_file_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+    return data['fragenkatalog']
+
+def evaluate_answers_by_difficulty(results, llm_name, output_file=None):
+    """Evaluate the model's answers and calculate accuracy by difficulty level."""
+    # Initialize counters for each difficulty level
+    difficulty_counts = {
+        "Leicht": {"correct": 0, "total": 0},
+        "Mittel": {"correct": 0, "total": 0},
+        "Schwer": {"correct": 0, "total": 0}
+    }
+    
+    total_correct = 0
+    total_questions = len(results)
+    
+    if output_file:
+        with open(output_file, 'w', encoding='utf-8') as file:
+            file.write(f"# Evaluation Results for {llm_name}\n\n")
+            
+            for i, result in enumerate(results, 1):
+                # Get the difficulty level from the question metadata
+                difficulty = result.get('difficulty', 'Unknown')
+                
+                file.write(f"## Question {i}: {result['question']}\n")
+                file.write(f"**Difficulty:** {difficulty}\n")
+                file.write(f"**Model Answer:** {result['answer']}\n")
+                if result['detailed_answer']:
+                    file.write(f"**Detailed Explanation:** {result['detailed_answer']}\n")
+                file.write(f"**Correct Answer:** {result['correct_answer']} ({result['correct_answer_text']})\n")
+                
+                is_correct = result['answer'] == result['correct_answer']
+                file.write(f"**Result:** {'✓ Correct' if is_correct else '✗ Incorrect'}\n\n")
+                
+                # Update counters
+                if difficulty in difficulty_counts:
+                    difficulty_counts[difficulty]["total"] += 1
+                    if is_correct:
+                        difficulty_counts[difficulty]["correct"] += 1
+                        total_correct += 1
+            
+            # Calculate accuracy for each difficulty level
+            file.write("## Summary by Difficulty Level\n\n")
+            
+            for difficulty, counts in difficulty_counts.items():
+                if counts["total"] > 0:
+                    accuracy = (counts["correct"] / counts["total"]) * 100
+                    file.write(f"**{difficulty}:** {counts['correct']}/{counts['total']} ({accuracy:.2f}%)\n")
+            
+            # Overall accuracy
+            overall_accuracy = (total_correct / total_questions) * 100 if total_questions > 0 else 0
+            file.write(f"\n**Overall:** {total_correct}/{total_questions} ({overall_accuracy:.2f}%)\n")
+    
+    # Return evaluation metrics
+    evaluation = {
+        'by_difficulty': difficulty_counts,
+        'total': total_questions,
+        'correct': total_correct,
+        'accuracy': (total_correct / total_questions) * 100 if total_questions > 0 else 0
+    }
+    
+    return evaluation
+
 def main():
-    """Main function to demonstrate RAG pipeline."""
+    parser = argparse.ArgumentParser(description="RAG pipeline with multiple LLM evaluations")
+    parser.add_argument("--json", default="Fragenkatalog.json", help="Path to the JSON file with questions")
+    parser.add_argument("--limit", type=int, default=None, help="Limit the number of questions to process")
+    args = parser.parse_args()
+    
     # Check if vector database exists
     if not Path("faiss_index").exists():
-        print("Building vector database from course materials...")
-        course_directory = "course_materials"
-        course_text = process_course_materials(course_directory)
-        
-        # Save extracted text to a file (optional)
-        with open("extracted_course_content.txt", "w", encoding="utf-8") as f:
-            f.write(course_text)
-        print("Extracted text saved to extracted_course_content.txt")
-        
-        vector_store = build_vector_database(course_text)
-        print("Vector database built and saved to 'faiss_index'")
-    else:
-        print("Loading existing vector database...")
-        vector_store = load_vector_database()
+        print("Error: Vector database not found. Please run the original script to build it first.")
+        return
     
-    # Interactive question answering
-    print("\n=== Course Content Question Answering System ===")
-    print("Type 'exit' to quit\n")
+    # Load vector database
+    print("Loading vector database...")
+    vector_store = load_vector_database()
     
-    while True:
-        question = input("\nEnter your question: ")
-        if question.lower() == 'exit':
-            break
+    # Load questions from JSON file
+    json_file_path = args.json
+    print(f"Loading questions from {json_file_path}...")
+    questions = load_questions_from_json(json_file_path)
+    
+    # Limit questions if specified
+    if args.limit:
+        questions = questions[:args.limit]
+        print(f"Limited to processing {args.limit} questions")
+    
+    # Initialize LLM providers
+    try:
+        llm_providers = [
+            #HuggingFaceLLM("meta-llama/Meta-Llama-3-8B-Instruct"),   # Original model from your code
+            HuggingFaceLLM("microsoft/phi-2"),                        # Microsoft's Phi-2 model
+            HuggingFaceLLM("google/flan-t5-large")                    # Google's Flan-T5 model
+        ]
         
-        print("\nProcessing your question...\n")
-        result = rag_pipeline(question, vector_store)
+        print(f"Initialized {len(llm_providers)} LLM providers")
+        for llm in llm_providers:
+            print(f"  - {llm.name}")
+    except ValueError as e:
+        print(f"Error initializing LLM providers: {e}")
+        print("Please set required API keys in .env file.")
+        return
+    
+    # Process questions with each LLM provider
+    for llm in llm_providers:
+        results = []
+        print(f"\nProcessing {len(questions)} questions with {llm.name}...")
         
-        print("Answer:", result['answer'])
-        print("\n---")
-        print("Question analysis:", result['analysis']['question_type'])
-        print("Keywords identified:", ", ".join(result['analysis']['keywords']))
-        print("---\n")
-        # Uncomment to show the retrieved contexts
-        # print("Contexts used:")
-        # for i, context in enumerate(result['contexts']):
-        #     print(f"Context {i+1}:\n{context[:150]}...\n")
+        for i, q in enumerate(questions, 1):
+            print(f"Processing question {i}/{len(questions)}: {q['id']} with {llm.name}")
+            question_text = q['frage']
+            options = q['antwortmoeglichkeiten']
+            correct_answer_text = q['korrekte_antwort']
+            difficulty = q.get('schwierigkeit', 'Unknown')
+            
+            # Find the index of the correct answer to determine the letter (A, B, C)
+            correct_index = options.index(correct_answer_text)
+            correct_answer = chr(65 + correct_index)  # A, B, C, etc.
+            
+            # Use the RAG pipeline to answer the question
+            result = process_with_llm(llm, question_text, vector_store, options)
+            
+            # Add the correct answer information and difficulty
+            result['correct_answer'] = correct_answer
+            result['correct_answer_text'] = correct_answer_text
+            result['difficulty'] = difficulty
+            
+            # Print progress
+            print(f"  Model answer: {result['answer']}, Correct: {correct_answer}, Difficulty: {difficulty}")
+            results.append(result)
+        
+        # Evaluate the results by difficulty
+        output_file = f"evaluation_results_{llm.name}.txt"
+        print(f"\nEvaluating results for {llm.name}...")
+        evaluation = evaluate_answers_by_difficulty(results, llm.name, output_file)
+        
+        # Print summary
+        print(f"\nEvaluation Summary for {llm.name}:")
+        for difficulty, counts in evaluation['by_difficulty'].items():
+            if counts["total"] > 0:
+                accuracy = (counts["correct"] / counts["total"]) * 100
+                print(f"{difficulty}: {counts['correct']}/{counts['total']} ({accuracy:.2f}%)")
+        
+        print(f"Overall: {evaluation['correct']}/{evaluation['total']} ({evaluation['accuracy']:.2f}%)")
+        print(f"Detailed results saved to {output_file}")
 
 if __name__ == "__main__":
     main()

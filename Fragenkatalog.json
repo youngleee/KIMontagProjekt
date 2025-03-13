@@ -1,0 +1,1324 @@
+{
+    "fragenkatalog": [
+      {
+        "id": 1,
+        "schwierigkeit": "Leicht",
+        "frage": "Welches der folgenden Konzepte beschreibt den systematischen Einsatz von Methoden und Werkzeugen zur Entwicklung und Implementierung von Software?",
+        "antwortmoeglichkeiten": [
+          "Informationstechnik",
+          "Softwaretechnik",
+          "Datenverarbeitung"
+        ],
+        "korrekte_antwort": "Softwaretechnik"
+      },
+      {
+        "id": 2,
+        "schwierigkeit": "Leicht",
+        "frage": "Die Frage nach dem Ziel oder Zweck eines Sachverhalts ist welcher Art von Frage zuzuordnen?",
+        "antwortmoeglichkeiten": [
+          "Warum?",
+          "Wozu?",
+          "Wer?"
+        ],
+        "korrekte_antwort": "Wozu?"
+      },
+      {
+        "id": 3,
+        "schwierigkeit": "Leicht",
+        "frage": "Auf welche Dimension der Betrachtung zielt die Frage Warum? in der Systemanalyse primär ab?",
+        "antwortmoeglichkeiten": [
+          "Die zukünftigen Anwendungen",
+          "Die beteiligten Personen",
+          "Den zugrundeliegenden Grund oder die Ursache"
+        ],
+        "korrekte_antwort": "Den zugrundeliegenden Grund oder die Ursache"
+      },
+      {
+        "id": 4,
+        "schwierigkeit": "Leicht",
+        "frage": "Wer sind typischerweise die Personen, die Anforderungen an ein zu entwickelndes Softwaresystem definieren und unterschiedliche fachliche Interessen vertreten?",
+        "antwortmoeglichkeiten": [
+          "Das Entwicklungsteam",
+          "Die Projektleitung",
+          "Stakeholder"
+        ],
+        "korrekte_antwort": "Stakeholder"
+      },
+      {
+        "id": 5,
+        "schwierigkeit": "Leicht",
+        "frage": "Welches der folgenden Dokumente dient primär der Dokumentation von Software-Engineering-Ergebnissen gemäß etablierten Lösungsansätzen?",
+        "antwortmoeglichkeiten": [
+          "Ein Programmquellcode",
+          "Eine Datenbank",
+          "Ein UML-Diagramm"
+        ],
+        "korrekte_antwort": "Ein UML-Diagramm"
+      },
+      {
+        "id": 6,
+        "schwierigkeit": "Leicht",
+        "frage": "Was ist das übergeordnete Ziel einer strukturierten Vorgehensweise (Methode) in der Softwareentwicklung?",
+        "antwortmoeglichkeiten": [
+          "Die Erstellung möglichst umfangreicher Dokumentationen",
+          "Die Beschleunigung des Entwicklungsprozesses um jeden Preis",
+          "Die wirtschaftliche Erstellung qualitativ hochwertiger Software"
+        ],
+        "korrekte_antwort": "Die wirtschaftliche Erstellung qualitativ hochwertiger Software"
+      },
+      {
+        "id": 7,
+        "schwierigkeit": "Leicht",
+        "frage": "In welchen Phasen eines Softwareentwicklungsprojekts spielt die Softwaretechnik eine Rolle?",
+        "antwortmoeglichkeiten": [
+          "Ausschließlich in der Programmierphase",
+          "Nur in der Planung und im Entwurf",
+          "Von der ersten Analyse bis zur Wartung und zum Einsatz"
+        ],
+        "korrekte_antwort": "Von der ersten Analyse bis zur Wartung und zum Einsatz"
+      },
+      {
+        "id": 8,
+        "schwierigkeit": "Leicht",
+        "frage": "Welches Konzept beschreibt eine Gesamtheit von Elementen, die in einer bestimmten Weise miteinander verbunden sind und als funktionale Einheit betrachtet werden können?",
+        "antwortmoeglichkeiten": [
+          "Eine Schnittstelle",
+          "Ein System",
+          "Eine Komponente"
+        ],
+        "korrekte_antwort": "Ein System"
+      },
+      {
+        "id": 9,
+        "schwierigkeit": "Leicht",
+        "frage": "Welche der folgenden Eigenschaften zählt zu den strukturellen Merkmalen eines Systems?",
+        "antwortmoeglichkeiten": [
+          "Ereignisse",
+          "Aktionen",
+          "Beziehungen"
+        ],
+        "korrekte_antwort": "Beziehungen"
+      },
+      {
+        "id": 10,
+        "schwierigkeit": "Leicht",
+        "frage": "Welche der folgenden Eigenschaften beschreibt eher das Verhalten eines Systems?",
+        "antwortmoeglichkeiten": [
+          "Die Anzahl seiner Komponenten",
+          "Die Art der Verbindungen zwischen seinen Teilen",
+          "Die Abfolge seiner Zustandsänderungen"
+        ],
+        "korrekte_antwort": "Die Abfolge seiner Zustandsänderungen"
+      },
+      {
+        "id": 11,
+        "schwierigkeit": "Leicht",
+        "frage": "Wovon ist der Grad der Detaillierung (Abstraktionsniveau) bei der Untersuchung von Systemelementen primär abhängig?",
+        "antwortmoeglichkeiten": [
+          "Von der Größe des betrachteten Systems",
+          "Von der spezifischen Fragestellung oder Aufgabe",
+          "Von der Anzahl der beteiligten Personen"
+        ],
+        "korrekte_antwort": "Von der spezifischen Fragestellung oder Aufgabe"
+      },
+      {
+        "id": 12,
+        "schwierigkeit": "Leicht",
+        "frage": "Wie entsteht die oft komplexe Organisation von Systemen?",
+        "antwortmoeglichkeiten": [
+          "Durch das zufällige Hinzufügen neuer Elemente",
+          "Durch das isolierte Funktionieren einzelner Komponenten",
+          "Durch die hierarchische Anordnung und Verschachtelung von Subsystemen"
+        ],
+        "korrekte_antwort": "Durch die hierarchische Anordnung und Verschachtelung von Subsystemen"
+      },
+      {
+        "id": 13,
+        "schwierigkeit": "Leicht",
+        "frage": "Was sind die grundlegenden, raumzeitlichen Eigenschaften, die sowohl reale als auch modellhafte Systeme kennzeichnen?",
+        "antwortmoeglichkeiten": [
+          "Masse und Energie",
+          "Information und Geschwindigkeit",
+          "Strukturen im Raum und Verhalten in der Zeit"
+        ],
+        "korrekte_antwort": "Strukturen im Raum und Verhalten in der Zeit"
+      },
+      {
+        "id": 14,
+        "schwierigkeit": "Leicht",
+        "frage": "Welche drei fundamentalen Ressourcen werden für die Lebensfähigkeit von Systemen als notwendig erachtet?",
+        "antwortmoeglichkeiten": [
+          "Daten, Hardware, Software",
+          "Rohstoffe, Personal, Kapital",
+          "Materie, Energie und Information"
+        ],
+        "korrekte_antwort": "Materie, Energie und Information"
+      },
+      {
+        "id": 15,
+        "schwierigkeit": "Leicht",
+        "frage": "Was ist die primäre Rolle von Information im Kontext der Systemlebensfähigkeit?",
+        "antwortmoeglichkeiten": [
+          "Die reine Speicherung von Fakten",
+          "Die Umwandlung von Materie in Energie",
+          "Die Anleitung für die Transformation von Materie durch Energie"
+        ],
+        "korrekte_antwort": "Die Anleitung für die Transformation von Materie durch Energie"
+      },
+      {
+        "id": 16,
+        "schwierigkeit": "Leicht",
+        "frage": "An welchem Punkt findet der Austausch von Eingangs- und Ausgangsgrößen zwischen einem System und seiner Umgebung statt?",
+        "antwortmoeglichkeiten": [
+          "Im Kern des Systems",
+          "In den Elementen des Systems",
+          "An der Schnittstelle des Systems"
+        ],
+        "korrekte_antwort": "An der Schnittstelle des Systems"
+      },
+      {
+        "id": 17,
+        "schwierigkeit": "Leicht",
+        "frage": "Wer legt primär fest, welche Größen über die Schnittstelle in ein System gelangen und es wieder verlassen?",
+        "antwortmoeglichkeiten": [
+          "Das System selbst",
+          "Die Umgebung des Systems",
+          "Die benachbarten Systeme"
+        ],
+        "korrekte_antwort": "Das System selbst"
+      },
+      {
+        "id": 18,
+        "schwierigkeit": "Leicht",
+        "frage": "Welche Perspektive auf ein System betrachtet seine inneren Bestandteile und deren Zusammenwirken?",
+        "antwortmoeglichkeiten": [
+          "Die Außensicht (Black Box)",
+          "Die Innensicht (White Box)",
+          "Die Umweltsicht"
+        ],
+        "korrekte_antwort": "Die Innensicht (White Box)"
+      },
+      {
+        "id": 19,
+        "schwierigkeit": "Leicht",
+        "frage": "Die Beschreibung der inneren Struktur eines Teilsystems muss womit vereinbar sein?",
+        "antwortmoeglichkeiten": [
+          "Mit den Beschreibungen anderer Teilsysteme",
+          "Mit den Anforderungen der Stakeholder",
+          "Mit der zugehörigen Außenansicht des Teilsystems"
+        ],
+        "korrekte_antwort": "Mit der zugehörigen Außenansicht des Teilsystems"
+      },
+      {
+        "id": 20,
+        "schwierigkeit": "Leicht",
+        "frage": "Welche der folgenden Beschreibungen passt zur Strukturdimension im Kontext der Wirtschaftsinformatik?",
+        "antwortmoeglichkeiten": [
+          "Anordnung und Statik",
+          "Abläufe und Prozesse",
+          "Veränderung und Dynamik"
+        ],
+        "korrekte_antwort": "Anordnung und Statik"
+      },
+      {
+        "id": 21,
+        "schwierigkeit": "Leicht",
+        "frage": "Welcher Begriff beschreibt die zeitliche Entwicklung und Veränderung von Systemen im Kontext der Wirtschaftsinformatik?",
+        "antwortmoeglichkeiten": [
+          "Verhalten",
+          "Struktur",
+          "Statik"
+        ],
+        "korrekte_antwort": "Verhalten"
+      },
+      {
+        "id": 22,
+        "schwierigkeit": "Leicht",
+        "frage": "Auf welchen drei fundamentalen Konzepten basieren operative Systeme?",
+        "antwortmoeglichkeiten": [
+          "Input, Output, Verarbeitung",
+          "Planung, Steuerung, Kontrolle",
+          "Information, Material, Energie"
+        ],
+        "korrekte_antwort": "Information, Material, Energie"
+      },
+      {
+        "id": 23,
+        "schwierigkeit": "Leicht",
+        "frage": "Was ist die grundlegende Aufgabe, die jedes System in Bezug auf seine Umgebung erfüllen muss?",
+        "antwortmoeglichkeiten": [
+          "Seine Ressourcen maximal zu nutzen",
+          "Seine Komplexität zu erhöhen",
+          "Seinen Platz und seine Funktion zu finden"
+        ],
+        "korrekte_antwort": "Seinen Platz und seine Funktion zu finden"
+      },
+      {
+        "id": 24,
+        "schwierigkeit": "Leicht",
+        "frage": "Auf welche Weise tauschen typischerweise zwei interagierende Systeme miteinander aus?",
+        "antwortmoeglichkeiten": [
+          "Ausschließlich physische Komponenten",
+          "Informationen, materielle Güter oder Energie",
+          "Nur Steuerungssignale"
+        ],
+        "korrekte_antwort": "Informationen, materielle Güter oder Energie"
+      },
+      {
+        "id": 25,
+        "schwierigkeit": "Leicht",
+        "frage": "Was kennzeichnet eine strukturorientierte Sichtweise auf ein Unternehmen primär?",
+        "antwortmoeglichkeiten": [
+          "Die Dynamik von Entscheidungsprozessen",
+          "Die Interaktionen mit Wettbewerbern",
+          "Die formale Organisation und Ressourcenverwendung"
+        ],
+        "korrekte_antwort": "Die formale Organisation und Ressourcenverwendung"
+      },
+      {
+        "id": 26,
+        "schwierigkeit": "Leicht",
+        "frage": "Was betont eine verhaltensorientierte Definition eines Unternehmens stärker?",
+        "antwortmoeglichkeiten": [
+          "Die eingesetzten Technologien",
+          "Die Verteilung von Rechten und Verantwortlichkeiten im Zeitverlauf",
+          "Die statische Aufbauorganisation"
+        ],
+        "korrekte_antwort": "Die Verteilung von Rechten und Verantwortlichkeiten im Zeitverlauf"
+      },
+      {
+        "id": 27,
+        "schwierigkeit": "Leicht",
+        "frage": "Welche Art von Interaktionen sind typisch für die Elemente eines komplexen Systems?",
+        "antwortmoeglichkeiten": [
+          "Lineare Beziehungen",
+          "Nichtlineare Interaktionen",
+          "Vorhersagbare Abläufe"
+        ],
+        "korrekte_antwort": "Nichtlineare Interaktionen"
+      },
+      {
+        "id": 28,
+        "schwierigkeit": "Leicht",
+        "frage": "Was nimmt in einem System mit einer großen Anzahl spezialisierter und stark vernetzter Komponenten tendenziell zu?",
+        "antwortmoeglichkeiten": [
+          "Die Einfachheit der Einzelteile",
+          "Die Unabhängigkeit der Funktionen",
+          "Die Gesamtkomplexität des Systems"
+        ],
+        "korrekte_antwort": "Die Gesamtkomplexität des Systems"
+      },
+      {
+        "id": 29,
+        "schwierigkeit": "Leicht",
+        "frage": "Warum wird in Bezug auf Systeme von organisierter Komplexität gesprochen?",
+        "antwortmoeglichkeiten": [
+          "Weil interagierende Systeme sich gegenseitig beeinflussen und anpassen",
+          "Weil die Anzahl der Elemente immer sehr hoch ist",
+          "Weil keine klaren Regeln für Interaktionen existieren"
+        ],
+        "korrekte_antwort": "Weil interagierende Systeme sich gegenseitig beeinflussen und anpassen"
+      },
+      {
+        "id": 30,
+        "schwierigkeit": "Leicht",
+        "frage": "Welchen Vorteil bietet der Einsatz von Prinzipien, Methoden und Vorgehensweisen im Umgang mit komplexen Systemen?",
+        "antwortmoeglichkeiten": [
+          "Die vollständige Vorhersagbarkeit des Systemverhaltens",
+          "Die Möglichkeit, komplexe Sachverhalte strukturiert zu analysieren und zu bearbeiten",
+          "Die Reduktion der Komplexität auf ein triviales Niveau"
+        ],
+        "korrekte_antwort": "Die Möglichkeit, komplexe Sachverhalte strukturiert zu analysieren und zu bearbeiten"
+      },
+      {
+        "id": 31,
+        "schwierigkeit": "Leicht",
+        "frage": "Was ist ein wesentliches Merkmal eines adaptiven Systems?",
+        "antwortmoeglichkeiten": [
+          "Seine statische und unveränderliche Struktur",
+          "Das Fehlen von Wechselwirkungen mit seiner Umgebung",
+          "Seine Fähigkeit, auf Veränderungen in seiner Umgebung zu reagieren"
+        ],
+        "korrekte_antwort": "Seine Fähigkeit, auf Veränderungen in seiner Umgebung zu reagieren"
+      },
+      {
+        "id": 32,
+        "schwierigkeit": "Leicht",
+        "frage": "In welche grundlegenden Dimensionen kann der physische Raum unterteilt werden?",
+        "antwortmoeglichkeiten": [
+          "Höhe, Breite und Tiefe",
+          "Länge und Breite",
+          "Zeit und Raum"
+        ],
+        "korrekte_antwort": "Höhe, Breite und Tiefe"
+      },
+      {
+        "id": 33,
+        "schwierigkeit": "Leicht",
+        "frage": "Welche der folgenden Beziehungen beschreibt, dass eine kleinere Einheit ein Bestandteil einer größeren Einheit ist?",
+        "antwortmoeglichkeiten": [
+          "ist_verknüpft_mit-Beziehung",
+          "ist_Teil_von-Beziehung",
+          "ist_ein-Beziehung"
+        ],
+        "korrekte_antwort": "ist_Teil_von-Beziehung"
+      },
+      {
+        "id": 34,
+        "schwierigkeit": "Leicht",
+        "frage": "Welcher Begriff beschreibt die Beziehung zwischen einer spezifischen Ausprägung und einer allgemeineren Kategorie (z.B. Student ist ein Mensch)?",
+        "antwortmoeglichkeiten": [
+          "Assoziation",
+          "Generalisierung/Spezialisierung (ist_ein-Beziehung)",
+          "Aggregation"
+        ],
+        "korrekte_antwort": "Generalisierung/Spezialisierung (ist_ein-Beziehung)"
+      },
+      {
+        "id": 35,
+        "schwierigkeit": "Leicht",
+        "frage": "Welche Art von Beziehung besteht zwischen zwei Einheiten, die auf der gleichen Ebene miteinander in Verbindung stehen, z.B. im Sinne einer Zusammenarbeit oder Interaktion?",
+        "antwortmoeglichkeiten": [
+          "Hierarchische Beziehung",
+          "Teil-Ganzes-Beziehung",
+          "Beziehung der Gleichordnung (ist_benachbart_mit-Beziehung)"
+        ],
+        "korrekte_antwort": "Beziehung der Gleichordnung (ist_benachbart_mit-Beziehung)"
+      },
+      {
+        "id": 36,
+        "schwierigkeit": "Leicht",
+        "frage": "Welche logische Verknüpfung wird typischerweise mit einer Taxonomie (z.B. einer Generalisierungshierarchie) assoziiert?",
+        "antwortmoeglichkeiten": [
+          "AND-Verknüpfung",
+          "XOR-Verknüpfung",
+          "OR-Verknüpfung"
+        ],
+        "korrekte_antwort": "XOR-Verknüpfung"
+      },
+      {
+        "id": 37,
+        "schwierigkeit": "Leicht",
+        "frage": "Welche logische Verknüpfung kennzeichnet typischerweise eine Partonomie (eine Hierarchie basierend auf der ist_Teil_von-Beziehung)?",
+        "antwortmoeglichkeiten": [
+          "XOR-Verknüpfung",
+          "OR-Verknüpfung",
+          "AND-Verknüpfung"
+        ],
+        "korrekte_antwort": "AND-Verknüpfung"
+      },
+      {
+        "id": 38,
+        "schwierigkeit": "Leicht",
+        "frage": "Um ein komplexes System übersichtlich darzustellen, welche zwei Arten von Abstraktionshierarchien können primär genutzt werden?",
+        "antwortmoeglichkeiten": [
+          "Aggregation/Komposition (ist_Teil_von) und Generalisierung/Spezialisierung (ist_ein)",
+          "Zeitliche und räumliche Hierarchien",
+          "Funktionale und nicht-funktionale Hierarchien"
+        ],
+        "korrekte_antwort": "Aggregation/Komposition (ist_Teil_von) und Generalisierung/Spezialisierung (ist_ein)"
+      },
+      {
+        "id": 39,
+        "schwierigkeit": "Leicht",
+        "frage": "Bei welcher Art von Abstraktionshierarchie stellen die untersten Elemente die spezifischsten und das oberste Element die allgemeinsten Eigenschaften dar?",
+        "antwortmoeglichkeiten": [
+          "Modulare Hierarchie",
+          "Schichtenarchitektur",
+          "Abstraktionshierarchie (Taxonomie oder Partonomie)"
+        ],
+        "korrekte_antwort": "Abstraktionshierarchie (Taxonomie oder Partonomie)"
+      },
+      {
+        "id": 40,
+        "schwierigkeit": "Leicht",
+        "frage": "Welche grundlegende Technik liegt dem Denken als Mittel zur Komplexitätsreduktion zugrunde?",
+        "antwortmoeglichkeiten": [
+          "Das Ignorieren aller Details",
+          "Die Unterscheidung zwischen Wesentlichem und Unwesentlichem",
+          "Die zufällige Auswahl von Informationen"
+        ],
+        "korrekte_antwort": "Die Unterscheidung zwischen Wesentlichem und Unwesentlichem"
+      },
+      {
+        "id": 41,
+        "schwierigkeit": "Mittel",
+        "frage": "Was versteht man im Kontext der Softwaretechnik unter einem Artefakt?",
+        "antwortmoeglichkeiten": [
+          "Eine Person, die am Softwareentwicklungsprozess beteiligt ist.",
+          "Ein Teilergebnis oder ein Dokument, das im Laufe des Softwareentwicklungsprozesses entsteht.",
+          "Ein Werkzeug, das zur Unterstützung der Softwareentwicklung eingesetzt wird."
+        ],
+        "korrekte_antwort": "Ein Teilergebnis oder ein Dokument, das im Laufe des Softwareentwicklungsprozesses entsteht."
+      },
+      {
+        "id": 42,
+        "schwierigkeit": "Mittel",
+        "frage": "Welche Aussage beschreibt die Hauptintention des Warum? in den W-Fragen zur Strukturierung eines Themenbereichs in der Softwaretechnik?",
+        "antwortmoeglichkeiten": [
+          "Die Beschreibung der aktuellen Situation.",
+          "Die Ergründung der Ursachen und Beweggründe für die Notwendigkeit einer Betrachtung.",
+          "Die Festlegung der zukünftigen Ziele."
+        ],
+        "korrekte_antwort": "Die Ergründung der Ursachen und Beweggründe für die Notwendigkeit einer Betrachtung."
+      },
+      {
+        "id": 43,
+        "schwierigkeit": "Mittel",
+        "frage": "Das Konzept der Allgemeinen Systemtheorie nach von Bertalanffy hat welchen Anspruch?",
+        "antwortmoeglichkeiten": [
+          "Eine transdisziplinäre Untersuchung der allgemeinen Kriterien von Systemen und deren Interaktionen.",
+          "Eine rein informatikspezifische Betrachtung von Systemen.",
+          "Die detaillierte Analyse einzelner Softwarekomponenten."
+        ],
+        "korrekte_antwort": "Eine transdisziplinäre Untersuchung der allgemeinen Kriterien von Systemen und deren Interaktionen."
+      },
+      {
+        "id": 44,
+        "schwierigkeit": "Mittel",
+        "frage": "Was kennzeichnet die Beziehungen als strukturelle Eigenschaft eines Systems?",
+        "antwortmoeglichkeiten": [
+          "Einzelne, voneinander unabhängige Bestandteile.",
+          "Zeitlich aufeinanderfolgende Abläufe innerhalb des Systems.",
+          "Die Art und Weise, wie die Elemente eines Systems miteinander in Verbindung stehen."
+        ],
+        "korrekte_antwort": "Die Art und Weise, wie die Elemente eines Systems miteinander in Verbindung stehen."
+      },
+      {
+        "id": 45,
+        "schwierigkeit": "Mittel",
+        "frage": "In welcher Form manifestieren sich die raumzeitlichen Dimensionen in Systemen und ihren Modellen?",
+        "antwortmoeglichkeiten": [
+          "Als Energie und Materie.",
+          "Als Input und Output.",
+          "Als (räumliche) Strukturen und (zeitliches) Verhalten."
+        ],
+        "korrekte_antwort": "Als (räumliche) Strukturen und (zeitliches) Verhalten."
+      },
+      {
+        "id": 46,
+        "schwierigkeit": "Mittel",
+        "frage": "Was ist die primäre Funktion eines CASE-Tools im Softwareentwicklungsprozess?",
+        "antwortmoeglichkeiten": [
+          "Die direkte Generierung ausführbaren Programmcodes ohne weitere Schritte.",
+          "Die schrittweise Umsetzung der Anforderungen von der Sprache der Stakeholder in die Sprache der Informatik (z.B. UML) durch Werkzeugunterstützung.",
+          "Die ausschließliche Verwaltung von Projektmanagement-Aufgaben."
+        ],
+        "korrekte_antwort": "Die schrittweise Umsetzung der Anforderungen von der Sprache der Stakeholder in die Sprache der Informatik (z.B. UML) durch Werkzeugunterstützung."
+      },
+      {
+        "id": 47,
+        "schwierigkeit": "Mittel",
+        "frage": "Was versteht man unter dem Abstraktionsniveau bei der Analyse von Systemelementen?",
+        "antwortmoeglichkeiten": [
+          "Die Komplexität der Beziehungen zwischen den Elementen.",
+          "Den Grad der Detaillierung, mit dem ein Betrachter das System aufgrund seiner Fragestellung/Aufgabe untersucht.",
+          "Die räumliche Anordnung der Systemkomponenten."
+        ],
+        "korrekte_antwort": "Den Grad der Detaillierung, mit dem ein Betrachter das System aufgrund seiner Fragestellung/Aufgabe untersucht."
+      },
+      {
+        "id": 48,
+        "schwierigkeit": "Mittel",
+        "frage": "Welche Aussage charakterisiert die hierarchische Ineinanderschachtelung von Systemen?",
+        "antwortmoeglichkeiten": [
+          "Elemente eines Systems sind niemals selbst wieder Systeme.",
+          "Ein komplexer Aufbau von Systemen entsteht dadurch, dass Elemente auf einer bestimmten Abstraktionsebene bei genauerer Betrachtung selbst wieder als Systeme identifiziert werden können.",
+          "Hierarchie bedeutet, dass alle Subsysteme voneinander unabhängig funktionieren."
+        ],
+        "korrekte_antwort": "Ein komplexer Aufbau von Systemen entsteht dadurch, dass Elemente auf einer bestimmten Abstraktionsebene bei genauerer Betrachtung selbst wieder als Systeme identifiziert werden können."
+      },
+      {
+        "id": 49,
+        "schwierigkeit": "Mittel",
+        "frage": "Welche der folgenden Komponenten ist gemäß der Systemtheorie notwendig für die Lebensfähigkeit eines Systems und dient als Anleitung für Transformationen?",
+        "antwortmoeglichkeiten": [
+          "Materie",
+          "Energie",
+          "Information"
+        ],
+        "korrekte_antwort": "Information"
+      },
+      {
+        "id": 50,
+        "schwierigkeit": "Mittel",
+        "frage": "Was beschreibt die Schnittstelle eines Systems im Kontext seiner Umgebung?",
+        "antwortmoeglichkeiten": [
+          "Die Grenze, an der das System mit seiner Umgebung interagiert und ein Austausch stattfindet.",
+          "Den Kern des Systems, in dem die Hauptfunktionen ablaufen.",
+          "Die Summe aller Elemente, aus denen das System besteht."
+        ],
+        "korrekte_antwort": "Die Grenze, an der das System mit seiner Umgebung interagiert und ein Austausch stattfindet."
+      },
+      {
+        "id": 51,
+        "schwierigkeit": "Mittel",
+        "frage": "Welche Perspektive auf ein System wird eingenommen, wenn man es als Black Box betrachtet?",
+        "antwortmoeglichkeiten": [
+          "Die detaillierte Analyse der inneren Funktionsweise.",
+          "Die Betrachtung des Systems hinsichtlich seiner Ein- und Ausgaben, ohne die internen Prozesse zu untersuchen.",
+          "Die Untersuchung der Beziehungen zu anderen Systemen in der Umgebung."
+        ],
+        "korrekte_antwort": "Die Betrachtung des Systems hinsichtlich seiner Ein- und Ausgaben, ohne die internen Prozesse zu untersuchen."
+      },
+      {
+        "id": 52,
+        "schwierigkeit": "Mittel",
+        "frage": "Was kennzeichnet nichtlineare Interaktionen zwischen den Elementen eines komplexen Systems?",
+        "antwortmoeglichkeiten": [
+          "Vorhersagbare und proportionale Reaktionen auf Veränderungen.",
+          "Interaktionen, die sich isoliert ohne Einfluss auf andere Elemente des Systems abspielen.",
+          "Reaktionen, die nicht direkt proportional zur Ursache sind und unerwartete Verhaltensmuster hervorbringen können."
+        ],
+        "korrekte_antwort": "Reaktionen, die nicht direkt proportional zur Ursache sind und unerwartete Verhaltensmuster hervorbringen können."
+      },
+      {
+        "id": 53,
+        "schwierigkeit": "Mittel",
+        "frage": "Warum führt die Konkurrenz zwischen Systemen häufig zu einer Zunahme der Komplexität?",
+        "antwortmoeglichkeiten": [
+          "Weil Systeme versuchen, ihre Anzahl an Elementen und Verbindungen zufällig zu erhöhen.",
+          "Weil sich Systeme an veränderte Bedingungen in ihrer Umgebung anpassen müssen, was oft zu zusätzlichen Strukturen und Prozessen führt.",
+          "Weil Komplexität per se ein evolutionärer Vorteil ist."
+        ],
+        "korrekte_antwort": "Weil sich Systeme an veränderte Bedingungen in ihrer Umgebung anpassen müssen, was oft zu zusätzlichen Strukturen und Prozessen führt."
+      },
+      {
+        "id": 54,
+        "schwierigkeit": "Mittel",
+        "frage": "Was versteht man unter verhaltenmäßiger Adaptivität eines Systems?",
+        "antwortmoeglichkeiten": [
+          "Die Fähigkeit, auf Veränderungen in der Umgebung durch Modifikation seiner Abläufe und Prozesse zu reagieren.",
+          "Die Fähigkeit, seine physische Struktur an die Umgebung anzupassen.",
+          "Die Möglichkeit, neue Schnittstellen zu seiner Umgebung zu schaffen."
+        ],
+        "korrekte_antwort": "Die Fähigkeit, auf Veränderungen in der Umgebung durch Modifikation seiner Abläufe und Prozesse zu reagieren."
+      },
+      {
+        "id": 55,
+        "schwierigkeit": "Mittel",
+        "frage": "Welche der drei mentalen, logischen und orthogonalen Dimensionen zur Analyse der Anwendungsdomäne beschreibt die Beziehung, bei der eine Einheit Teil einer größeren Einheit ist?",
+        "antwortmoeglichkeiten": [
+          "ist_ein-Beziehung",
+          "ist_benachbart_mit-Beziehung",
+          "ist_Teil_von-Beziehung"
+        ],
+        "korrekte_antwort": "ist_Teil_von-Beziehung"
+      },
+      {
+        "id": 56,
+        "schwierigkeit": "Mittel",
+        "frage": "Was ist der wesentliche Unterschied zwischen einer Taxonomie und einer Partonomie als Abstraktionshierarchien?",
+        "antwortmoeglichkeiten": [
+          "Eine Taxonomie basiert auf der ist_Teil_von-Beziehung, eine Partonomie auf der ist_ein-Beziehung.",
+          "Eine Taxonomie stellt eine logische XOR-Beziehung dar, während eine Partonomie eine logische AND-Beziehung zwischen den Einheiten herstellt.",
+          "Eine Taxonomie wird zur Darstellung statischer Aspekte verwendet, eine Partonomie zur Darstellung dynamischer Aspekte."
+        ],
+        "korrekte_antwort": "Eine Taxonomie stellt eine logische XOR-Beziehung dar, während eine Partonomie eine logische AND-Beziehung zwischen den Einheiten herstellt."
+      },
+      {
+        "id": 57,
+        "schwierigkeit": "Mittel",
+        "frage": "Was bedeutet Abstraktion im Kontext von Hierarchien in der Systemmodellierung?",
+        "antwortmoeglichkeiten": [
+          "Der Übergang von einer spezifischen zu einer allgemeineren Darstellung durch das Weglassen von Details.",
+          "Der Übergang von einer allgemeinen zu einer spezifischen Darstellung.",
+          "Die detaillierte Beschreibung aller Elemente und Beziehungen auf einer Ebene."
+        ],
+        "korrekte_antwort": "Der Übergang von einer spezifischen zu einer allgemeineren Darstellung durch das Weglassen von Details."
+      },
+      {
+        "id": 58,
+        "schwierigkeit": "Mittel",
+        "frage": "Was kennzeichnet eine Heterarchie im Gegensatz zu einer Hierarchie?",
+        "antwortmoeglichkeiten": [
+          "Eine klare Über- und Unterordnung der Elemente.",
+          "Eine Gleichordnung der Elemente auf einer Ebene, wobei diese unterschiedliche Funktionen haben können.",
+          "Eine Struktur, die ausschließlich aus ist_Teil_von-Beziehungen besteht."
+        ],
+        "korrekte_antwort": "Eine Gleichordnung der Elemente auf einer Ebene, wobei diese unterschiedliche Funktionen haben können."
+      },
+      {
+        "id": 59,
+        "schwierigkeit": "Mittel",
+        "frage": "Was versteht man unter einem Modul innerhalb einer heterarchischen Struktur?",
+        "antwortmoeglichkeiten": [
+          "Ein Element, das über allen anderen Elementen der Ebene steht.",
+          "Eine funktionale Einheit von Elementen, die innerhalb einer Ebene stärker miteinander in Beziehung stehen als zu anderen Elementen derselben Ebene.",
+          "Ein einzelnes, isoliert funktionierendes Element ohne Verbindungen zu anderen Elementen."
+        ],
+        "korrekte_antwort": "Eine funktionale Einheit von Elementen, die innerhalb einer Ebene stärker miteinander in Beziehung stehen als zu anderen Elementen derselben Ebene."
+      },
+      {
+        "id": 60,
+        "schwierigkeit": "Mittel",
+        "frage": "Welches Prinzip liegt der Aussage zugrunde, dass Denken etwas mit Komplexitätsreduktion zu tun hat?",
+        "antwortmoeglichkeiten": [
+          "Die willkürliche Vereinfachung komplexer Sachverhalte.",
+          "Die vollständige Erfassung aller Details, um ein umfassendes Bild zu erhalten.",
+          "Die Verarbeitung von Rohdaten zu Informationen durch Unterscheidung zwischen Wesentlichem und Unwesentlichem, um Muster zu erkennen."
+        ],
+        "korrekte_antwort": "Die Verarbeitung von Rohdaten zu Informationen durch Unterscheidung zwischen Wesentlichem und Unwesentlichem, um Muster zu erkennen."
+      },
+      {
+        "id": 61,
+        "schwierigkeit": "Mittel",
+        "frage": "Welche grundlegende Vorgehensweise wird in der Softwaretechnik angewendet, um die Komplexität großer Systeme handhabbarer zu machen, indem die Dimensionen Raum und Zeit unterteilt werden?",
+        "antwortmoeglichkeiten": [
+          "Generalisierung und Spezialisierung.",
+          "Modularisierung in Ebenen/Inkremente bzw. Iterationen/Versionen/Sprints.",
+          "Abstraktion durch das Hinzufügen weiterer Details."
+        ],
+        "korrekte_antwort": "Modularisierung in Ebenen/Inkremente bzw. Iterationen/Versionen/Sprints."
+      },
+      {
+        "id": 62,
+        "schwierigkeit": "Mittel",
+        "frage": "Was besagt das Prinzip der Modularität in der Softwaretechnik?",
+        "antwortmoeglichkeiten": [
+          "Der Grad, in dem ein System aus diskreten Komponenten besteht, so dass eine Änderung an einer Komponente minimale Auswirkungen auf andere Komponenten hat.",
+          "Die strikte Einhaltung einer hierarchischen Struktur.",
+          "Die zentrale Speicherung aller Daten in einer einzigen Komponente."
+        ],
+        "korrekte_antwort": "Der Grad, in dem ein System aus diskreten Komponenten besteht, so dass eine Änderung an einer Komponente minimale Auswirkungen auf andere Komponenten hat."
+      },
+      {
+        "id": 63,
+        "schwierigkeit": "Mittel",
+        "frage": "Welchen Vorteil bieten Muster (Patterns) in der Softwareentwicklung?",
+        "antwortmoeglichkeiten": [
+          "Sie führen immer zu identischen Implementierungen.",
+          "Sie beschreiben wiederkehrende Probleme und die Kernelemente ihrer Lösungen, die vielfältig angewendet werden können.",
+          "Sie eliminieren die Notwendigkeit für individuelle Lösungsansätze."
+        ],
+        "korrekte_antwort": "Sie beschreiben wiederkehrende Probleme und die Kernelemente ihrer Lösungen, die vielfältig angewendet werden können."
+      },
+      {
+        "id": 64,
+        "schwierigkeit": "Mittel",
+        "frage": "Was ist der Hauptzweck einer Methode im Kontext der Softwareentwicklung?",
+        "antwortmoeglichkeiten": [
+          "Die zufällige Generierung von Programmcode.",
+          "Die ausschließliche Fokussierung auf die technische Implementierung.",
+          "Eine planmäßig angewandte und begründete Vorgehensweise zur Erreichung festgelegter Ziele, oft durch die Erstellung von Modellen."
+        ],
+        "korrekte_antwort": "Eine planmäßig angewandte und begründete Vorgehensweise zur Erreichung festgelegter Ziele, oft durch die Erstellung von Modellen."
+      },
+      {
+        "id": 65,
+        "schwierigkeit": "Mittel",
+        "frage": "Welche der folgenden Dimensionen wird bei der Analyse virtueller Systeme in der Wirtschaftsinformatik betrachtet und beschäftigt sich mit der Verallgemeinerung/Konkretisierung von Begriffen?",
+        "antwortmoeglichkeiten": [
+          "Die Zusammensetzung/Zerteilung (ist_Teil_von-Beziehung).",
+          "Die Verbindungen von Einheiten und Begriffen auf gleicher Ebene (ist_verbunden_mit-Beziehung).",
+          "Die Verallgemeinerung/Konkretisierung von Begriffen (ist_ein-Beziehung)."
+        ],
+        "korrekte_antwort": "Die Verallgemeinerung/Konkretisierung von Begriffen (ist_ein-Beziehung)."
+      },
+      {
+        "id": 66,
+        "schwierigkeit": "Mittel",
+        "frage": "Was ist die Hauptaufgabe eines Aktors im Kontext der Systemmodellierung?",
+        "antwortmoeglichkeiten": [
+          "Die passive Speicherung von Daten.",
+          "Die aktive Interaktion mit einem System, indem er selbstständig Aktionen auslösen kann.",
+          "Die Definition der Systemstruktur."
+        ],
+        "korrekte_antwort": "Die aktive Interaktion mit einem System, indem er selbstständig Aktionen auslösen kann."
+      },
+      {
+        "id": 67,
+        "schwierigkeit": "Mittel",
+        "frage": "Was unterscheidet eine Rolle eines Objekts von dem Kern des Objekts?",
+        "antwortmoeglichkeiten": [
+          "Der Kern beschreibt die fundamentalen Eigenschaften, während die Rolle spezifische Attribute und Verhaltensweisen in einem bestimmten Kontext einer Beziehung hinzufügt.",
+          "Der Kern ändert sich ständig, während die Rolle statisch ist.",
+          "Es gibt keinen Unterschied, Kern und Rolle sind identisch."
+        ],
+        "korrekte_antwort": "Der Kern beschreibt die fundamentalen Eigenschaften, während die Rolle spezifische Attribute und Verhaltensweisen in einem bestimmten Kontext einer Beziehung hinzufügt."
+      },
+      {
+        "id": 68,
+        "schwierigkeit": "Mittel",
+        "frage": "Welche der vier grundlegenden Kontrollstrukturen in der Informatik beschreibt die wiederholte Ausführung von Aktionen?",
+        "antwortmoeglichkeiten": [
+          "Sequenz",
+          "Selektion",
+          "Iteration"
+        ],
+        "korrekte_antwort": "Iteration"
+      },
+      {
+        "id": 69,
+        "schwierigkeit": "Mittel",
+        "frage": "Was ist der Zweck eines Vorgehensmodells (Prozessmodells) in der Softwareentwicklung?",
+        "antwortmoeglichkeiten": [
+          "Die detaillierte Beschreibung der technischen Implementierung.",
+          "Die Festlegung eines organisatorischen Rahmens, der beschreibt, welche Aktivitäten in welcher Reihenfolge von welchen Rollen erledigt werden und welche Ergebnisse dabei entstehen.",
+          "Die rein agile Entwicklung ohne vorherige Planung."
+        ],
+        "korrekte_antwort": "Die Festlegung eines organisatorischen Rahmens, der beschreibt, welche Aktivitäten in welcher Reihenfolge von welchen Rollen erledigt werden und welche Ergebnisse dabei entstehen."
+      },
+      {
+        "id": 70,
+        "schwierigkeit": "Mittel",
+        "frage": "Was ist ein charakteristisches Merkmal des Wasserfall-Modells in der Softwareentwicklung?",
+        "antwortmoeglichkeiten": [
+          "Kurze, iterative Entwicklungszyklen mit schnellem Feedback.",
+          "Eine sequenzielle Abfolge von Phasen, bei der eine Phase abgeschlossen sein muss, bevor die nächste beginnt.",
+          "Eine hohe Flexibilität und Anpassungsfähigkeit an sich ändernde Anforderungen während des gesamten Projekts."
+        ],
+        "korrekte_antwort": "Eine sequenzielle Abfolge von Phasen, bei der eine Phase abgeschlossen sein muss, bevor die nächste beginnt."
+      },
+      {
+        "id": 71,
+        "schwierigkeit": "Mittel",
+        "frage": "Welche der drei wesentlichen Eigenschaften eines Modells nach Stachowiak besagt, dass es eine (logische) Beziehung zwischen der betrachteten Welt und dem Modell gibt?",
+        "antwortmoeglichkeiten": [
+          "Abbildungsfunktion",
+          "Reduktionsfunktion",
+          "Pragmatische Funktion"
+        ],
+        "korrekte_antwort": "Abbildungsfunktion"
+      },
+      {
+        "id": 72,
+        "schwierigkeit": "Mittel",
+        "frage": "Was ist der Hauptzweck von Modellen im Umgang mit komplexen Systemen?",
+        "antwortmoeglichkeiten": [
+          "Die vollständige und detaillierte Abbildung der Realität.",
+          "Die Reduktion von Komplexität durch das Ignorieren irrelevanter Details, um ein vereinfachtes Bild des Systems zu erhalten.",
+          "Die direkte Steuerung und Manipulation der realen Systeme."
+        ],
+        "korrekte_antwort": "Die Reduktion von Komplexität durch das Ignorieren irrelevanter Details, um ein vereinfachtes Bild des Systems zu erhalten."
+      },
+      {
+        "id": 73,
+        "schwierigkeit": "Mittel",
+        "frage": "Welche Rolle spielt eine Notation im Kontext der Modellierung?",
+        "antwortmoeglichkeiten": [
+          "Die informelle Beschreibung von Ideen und Konzepten.",
+          "Die subjektive Interpretation eines Modells durch verschiedene Betrachter.",
+          "Ein System von Schrift- und Symbolzeichen zur Darstellung eines Modells."
+        ],
+        "korrekte_antwort": "Ein System von Schrift- und Symbolzeichen zur Darstellung eines Modells."
+      },
+      {
+        "id": 74,
+        "schwierigkeit": "Mittel",
+        "frage": "Was ist gemäß der Definition im Material der Unterschied zwischen Daten und Information?",
+        "antwortmoeglichkeiten": [
+          "Daten sind bereits mit Kontext angereicherte Zeichen, während Information die reine Sammlung von Zeichen darstellt.",
+          "Daten sind Zeichen, die einem Alphabet zugeordnet sind, während Information durch die Anreicherung von Daten mit zusätzlichem Kontext entsteht.",
+          "Es gibt keinen wesentlichen Unterschied zwischen Daten und Information."
+        ],
+        "korrekte_antwort": "Daten sind Zeichen, die einem Alphabet zugeordnet sind, während Information durch die Anreicherung von Daten mit zusätzlichem Kontext entsteht."
+      },
+      {
+        "id": 75,
+        "schwierigkeit": "Mittel",
+        "frage": "Welche der folgenden Sprachkategorien wird im Softwareentwicklungsprozess verwendet, um die fachliche Anwendungsdomäne zu beschreiben?",
+        "antwortmoeglichkeiten": [
+          "Domain language (Fachsprache)",
+          "Maschinencode",
+          "General purpose programming language (GPL)"
+        ],
+        "korrekte_antwort": "Domain language (Fachsprache)"
+      },
+      {
+        "id": 76,
+        "schwierigkeit": "Mittel",
+        "frage": "Was ist der primäre Zweck der Unified Modeling Language (UML) im Softwareentwicklungsprozess?",
+        "antwortmoeglichkeiten": [
+          "Eine Programmiersprache zur direkten Implementierung von Software.",
+          "Eine standardisierte grafische Modellierungssprache zur Visualisierung, Spezifikation, Konstruktion und Dokumentation von Artefakten eines Softwaresystems.",
+          "Ein Werkzeug zur automatischen Fehlererkennung im Quellcode."
+        ],
+        "korrekte_antwort": "Eine standardisierte grafische Modellierungssprache zur Visualisierung, Spezifikation, Konstruktion und Dokumentation von Artefakten eines Softwaresystems."
+      },
+      {
+        "id": 77,
+        "schwierigkeit": "Mittel",
+        "frage": "Was beschreibt die Abbildungsfunktion eines Modells im Kontext des Requirements Engineerings?",
+        "antwortmoeglichkeiten": [
+          "Die Beziehung zwischen der realen Welt und der mentalen Vorstellung bzw. dem formalen Modell der Anforderungen.",
+          "Die Beschreibung der Schnittstellen zu anderen Systemen.",
+          "Die Festlegung der Verantwortlichkeiten der verschiedenen Stakeholder."
+        ],
+        "korrekte_antwort": "Die Beziehung zwischen der realen Welt und der mentalen Vorstellung bzw. dem formalen Modell der Anforderungen."
+      },
+      {
+        "id": 78,
+        "schwierigkeit": "Mittel",
+        "frage": "Warum ist die Definition von Systemgrenzen ein wichtiger erster Schritt in der Systemanalyse im Requirements Engineering?",
+        "antwortmoeglichkeiten": [
+          "Um die Komplexität des Systems unnötig zu erhöhen.",
+          "Um klar zu definieren, was zum System gehört und was zur Umgebung, um den Untersuchungsbereich abzugrenzen.",
+          "Um die technischen Details der Implementierung festzulegen."
+        ],
+        "korrekte_antwort": "Um klar zu definieren, was zum System gehört und was zur Umgebung, um den Untersuchungsbereich abzugrenzen."
+      },
+      {
+        "id": 79,
+        "schwierigkeit": "Mittel",
+        "frage": "Was ist der Hauptunterschied zwischen einem Lastenheft und einem Pflichtenheft im plan-basierten Vorgehensmodell?",
+        "antwortmoeglichkeiten": [
+          "Das Lastenheft beschreibt die technische Implementierung, während das Pflichtenheft die Anforderungen aus Nutzersicht enthält.",
+          "Es gibt keinen wesentlichen Unterschied, beide Dokumente haben den gleichen Inhalt.",
+          "Das Lastenheft wird in der Fachsprache der Wirtschaft verfasst und enthält eine grobe Anforderungsbeschreibung, während das Pflichtenheft in der Fachsprache der Informatik detaillierte und semi-formale Anforderungen enthält."
+        ],
+        "korrekte_antwort": "Das Lastenheft wird in der Fachsprache der Wirtschaft verfasst und enthält eine grobe Anforderungsbeschreibung, während das Pflichtenheft in der Fachsprache der Informatik detaillierte und semi-formale Anforderungen enthält."
+      },
+      {
+        "id": 80,
+        "schwierigkeit": "Mittel",
+        "frage": "Was ist das primäre Ziel einer Durchführbarkeitsstudie in der Planungsphase des Requirements Engineerings?",
+        "antwortmoeglichkeiten": [
+          "Die detaillierte Planung aller Entwicklungsphasen.",
+          "Die Prüfung der fachlichen, ökonomischen und personellen Realisierbarkeit des geplanten Systems, um eine Entscheidung über das weitere Vorgehen zu ermöglichen.",
+          "Die Erstellung des detaillierten Pflichtenhefts."
+        ],
+        "korrekte_antwort": "Die Prüfung der fachlichen, ökonomischen und personellen Realisierbarkeit des geplanten Systems, um eine Entscheidung über das weitere Vorgehen zu ermöglichen."
+      },
+      {
+        "id": 81,
+        "schwierigkeit": "Schwer",
+        "frage": "Welche der folgenden Aussagen beschreibt die komplexeste Herausforderung bei der Abstimmung zwischen dem Lastenheft, erstellt in der Fachsprache der Wirtschaft, und dem Pflichtenheft, verfasst in der Fachsprache der Informatik?",
+        "antwortmoeglichkeiten": [
+          "Die unterschiedliche formale Struktur der Dokumente.",
+          "Die potenziellen Interpretationsunterschiede und der Verlust von semantischer Genauigkeit beim Übergang zwischen den Domänen.",
+          "Die variierende Detaillierungstiefe der Anforderungen in beiden Dokumenten."
+        ],
+        "korrekte_antwort": "Die potenziellen Interpretationsunterschiede und der Verlust von semantischer Genauigkeit beim Übergang zwischen den Domänen."
+      },
+      {
+        "id": 82,
+        "schwierigkeit": "Schwer",
+        "frage": "In welchem Szenario wäre der Einsatz eines CASE-Tools mit Roundtrip Engineering-Funktionalität besonders vorteilhaft im Vergleich zu Werkzeugen, die nur Forward- oder Reverse-Engineering unterstützen?",
+        "antwortmoeglichkeiten": [
+          "Bei Projekten mit einem klar definierten, stabilen Anforderungskatalog.",
+          "Bei iterativen Entwicklungsprozessen, bei denen sich Modelle und Code häufig parallel ändern und synchronisiert werden müssen.",
+          "Bei der Migration einer Legacy-Anwendung auf eine neue Technologie."
+        ],
+        "korrekte_antwort": "Bei iterativen Entwicklungsprozessen, bei denen sich Modelle und Code häufig parallel ändern und synchronisiert werden müssen."
+      },
+      {
+        "id": 83,
+        "schwierigkeit": "Schwer",
+        "frage": "Betrachten Sie ein komplexes Softwaresystem. Welche Implikation hat eine hohe Anzahl von Aktoren in einem Use-Case-Diagramm typischerweise auf die Komplexität der Anforderungsanalyse?",
+        "antwortmoeglichkeiten": [
+          "Eine höhere Anzahl von Aktoren führt immer zu einer proportional höheren Anzahl von Use Cases.",
+          "Eine größere Vielfalt an Stakeholdern und deren Bedürfnisse erfordern eine umfassendere Ermittlung und Abstimmung der Anforderungen.",
+          "Die technische Implementierung wird durch eine hohe Anzahl von Aktoren direkt erschwert."
+        ],
+        "korrekte_antwort": "Eine größere Vielfalt an Stakeholdern und deren Bedürfnisse erfordern eine umfassendere Ermittlung und Abstimmung der Anforderungen."
+      },
+      {
+        "id": 84,
+        "schwierigkeit": "Schwer",
+        "frage": "In einem Aktivitätsdiagramm werden parallele Abläufe durch Parallelisierungsknoten und Synchronisationsknoten dargestellt. Welche potenzielle Schwierigkeit kann entstehen, wenn die Anzahl der eingehenden Aktivitätsstränge in einem Synchronisationsknoten nicht mit der tatsächlichen Anzahl der parallel ausgeführten Stränge übereinstimmt?",
+        "antwortmoeglichkeiten": [
+          "Das Diagramm wird syntaktisch ungültig.",
+          "Es kann zu einem Deadlock kommen, bei dem der Kontrollfluss auf die Beendigung eines nicht existierenden Strangs wartet.",
+          "Die Performance des Systems wird dadurch beeinträchtigt."
+        ],
+        "korrekte_antwort": "Es kann zu einem Deadlock kommen, bei dem der Kontrollfluss auf die Beendigung eines nicht existierenden Strangs wartet."
+      },
+      {
+        "id": 85,
+        "schwierigkeit": "Schwer",
+        "frage": "Der Unterschied zwischen Aggregation und Komposition im UML-Klassendiagramm liegt in der Stärke der Abhängigkeit der Teile vom Ganzen. In welchem der folgenden Modellierungsszenarien wäre die Verwendung einer Komposition anstelle einer Aggregation zwingender?",
+        "antwortmoeglichkeiten": [
+          "Ein 'Kurs' besteht aus mehreren 'Teilnehmern', die auch an anderen Kursen teilnehmen können.",
+          "Ein 'Gebäude' enthält mehrere 'Räume', die ohne das Gebäude nicht existieren können.",
+          "Eine 'Bestellung' umfasst mehrere 'Produkte', die auch einzeln verkauft werden."
+        ],
+        "korrekte_antwort": "Ein 'Gebäude' enthält mehrere 'Räume', die ohne das Gebäude nicht existieren können."
+      },
+      {
+        "id": 86,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Multiplizität einer Assoziation zwischen zwei Klassen im UML-Diagramm gibt die Anzahl der Objekte an, die in Beziehung zueinander stehen können. Welche Aussage impliziert eine optionale Beziehung auf beiden Seiten einer binären Assoziation (z.B. 0..* auf beiden Seiten)?",
+        "antwortmoeglichkeiten": [
+          "Jedes Objekt der einen Klasse muss mit mindestens einem Objekt der anderen Klasse in Beziehung stehen.",
+          "Es ist möglich, dass Objekte beider Klassen existieren, ohne dass eine Instanz der Beziehung zwischen ihnen besteht.",
+          "Die Anzahl der Beziehungen zwischen den Objekten beider Klassen ist immer gleich."
+        ],
+        "korrekte_antwort": "Es ist möglich, dass Objekte beider Klassen existieren, ohne dass eine Instanz der Beziehung zwischen ihnen besteht."
+      },
+      {
+        "id": 87,
+        "schwierigkeit": "Schwer",
+        "frage": "In der objektorientierten Modellierung können Schnittstellen (Interfaces) definiert werden. Welche der folgenden Designentscheidungen würde die Flexibilität und Erweiterbarkeit eines Softwaresystems unter Verwendung von Schnittstellen am meisten fördern?",
+        "antwortmoeglichkeiten": [
+          "Die Implementierung aller Methoden einer Schnittstelle direkt in der definierenden Klasse.",
+          "Die Programmierung gegen konkrete Klassen anstelle von Schnittstellen.",
+          "Die Verwendung von Schnittstellen, um Verträge für das Verhalten von Objekten zu definieren, ohne die konkrete Implementierung vorzugeben."
+        ],
+        "korrekte_antwort": "Die Verwendung von Schnittstellen, um Verträge für das Verhalten von Objekten zu definieren, ohne die konkrete Implementierung vorzugeben."
+      },
+      {
+        "id": 88,
+        "schwierigkeit": "Schwer",
+        "frage": "Betrachten Sie das Konzept der Rollenmodellierung im Kontext von Beziehungen zwischen Objekten. Welches Risiko besteht, wenn die Unterscheidung zwischen einer 'Kern-Rolle'-Beziehung und einer 'Generalisierung-Spezialisierung'-Beziehung nicht präzise erfolgt?",
+        "antwortmoeglichkeiten": [
+          "Es kommt zu Fehlern bei der Definition der Attribute und Methoden der beteiligten Klassen.",
+          "Die semantische Bedeutung der Beziehungen wird falsch interpretiert, was zu Inkonsistenzen im Modell und potenziellen Fehlern in der Implementierung führen kann.",
+          "Die Performance des Softwaresystems wird negativ beeinflusst."
+        ],
+        "korrekte_antwort": "Die semantische Bedeutung der Beziehungen wird falsch interpretiert, was zu Inkonsistenzen im Modell und potenziellen Fehlern in der Implementierung führen kann."
+      },
+      {
+        "id": 89,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Überführung eines UML-Klassendiagramms in Java-Code erfordert die Berücksichtigung verschiedener Aspekte. Welche Herausforderung entsteht typischerweise bei der Abbildung von n-m-Assoziationen (viele-zu-viele-Beziehungen) in einer objektorientierten Programmiersprache wie Java?",
+        "antwortmoeglichkeiten": [
+          "n-m-Assoziationen können direkt als Sprachkonstrukte in Java abgebildet werden.",
+          "Es ist notwendig, zusätzliche Datenstrukturen (z.B. Listen oder Mengen) zu verwenden, um die Beziehungen zwischen den Objekten zu verwalten, was die Komplexität der Implementierung erhöht.",
+          "Die Performance der Anwendung wird durch n-m-Assoziationen immer stark beeinträchtigt."
+        ],
+        "korrekte_antwort": "Es ist notwendig, zusätzliche Datenstrukturen (z.B. Listen oder Mengen) zu verwenden, um die Beziehungen zwischen den Objekten zu verwalten, was die Komplexität der Implementierung erhöht."
+      },
+      {
+        "id": 90,
+        "schwierigkeit": "Schwer",
+        "frage": "Im Kontext der Softwareentwicklung und der Notwendigkeit zur Abstraktion komplexer Systeme: Welche grundlegende Einschränkung menschlicher Kognition wird durch den Einsatz von Modellen und verschiedenen Abstraktionsebenen adressiert?",
+        "antwortmoeglichkeiten": [
+          "Die limitierte Fähigkeit, große Mengen an unstrukturierter Information gleichzeitig zu verarbeiten und zu verstehen.",
+          "Die Tendenz zu subjektiven Interpretationen von Systemanforderungen.",
+          "Die Schwierigkeit, technische Details präzise zu dokumentieren."
+        ],
+        "korrekte_antwort": "Die limitierte Fähigkeit, große Mengen an unstrukturierter Information gleichzeitig zu verarbeiten und zu verstehen."
+      },
+      {
+        "id": 91,
+        "schwierigkeit": "Schwer",
+        "frage": "Die W-Fragen dienen zur Strukturierung eines Themenbereichs in der Systemanalyse. Welche spezifische Herausforderung soll durch die explizite Frage nach dem 'Warum?' (Grund/Ursache) im Kontext sich dynamisch verändernder Systeme adressiert werden?",
+        "antwortmoeglichkeiten": [
+          "Die Identifizierung der aktuellen funktionalen Anforderungen.",
+          "Das Verständnis der historischen Entwicklung und der zugrundeliegenden Triebkräfte für die gegenwärtige Komplexität des zu analysierenden Ausschnitts der realen Welt.",
+          "Die Prognose zukünftiger Systemzustände."
+        ],
+        "korrekte_antwort": "Das Verständnis der historischen Entwicklung und der zugrundeliegenden Triebkräfte für die gegenwärtige Komplexität des zu analysierenden Ausschnitts der realen Welt."
+      },
+      {
+        "id": 92,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Allgemeine Systemtheorie betont die Betrachtung der 'Welt' als eine Hierarchie interagierender Systeme. Welche methodische Konsequenz ergibt sich aus dieser Perspektive für die Analyse eines spezifischen Software- oder Wirtschaftsinformatiksystems?",
+        "antwortmoeglichkeiten": [
+          "Die isolierte Betrachtung des Systems ohne Berücksichtigung seiner Umgebung ist ausreichend.",
+          "Es ist entscheidend, die relevanten übergeordneten Systeme und Subsysteme sowie die Schnittstellen und Interaktionen des betrachteten Systems zu identifizieren und zu analysieren.",
+          "Die primäre Fokussierung sollte auf den internen technischen Komponenten des Systems liegen."
+        ],
+        "korrekte_antwort": "Es ist entscheidend, die relevanten übergeordneten Systeme und Subsysteme sowie die Schnittstellen und Interaktionen des betrachteten Systems zu identifizieren und zu analysieren."
+      },
+      {
+        "id": 93,
+        "schwierigkeit": "Schwer",
+        "frage": "Das Konzept des 'Abstraktionsniveaus' ist zentral für die Analyse komplexer Systeme. Welches Risiko besteht, wenn das gewählte Abstraktionsniveau bei der Untersuchung eines Systems nicht angemessen an die spezifische Fragestellung oder Aufgabe angepasst ist?",
+        "antwortmoeglichkeiten": [
+          "Die Analyse wird unnötig zeitaufwendig.",
+          "Relevante Details können übersehen werden (bei zu hohem Abstraktionsniveau) oder die Analyse wird durch irrelevante Details überladen (bei zu niedrigem Abstraktionsniveau).",
+          "Die Kommunikation zwischen den beteiligten Stakeholdern wird erschwert."
+        ],
+        "korrekte_antwort": "Relevante Details können übersehen werden (bei zu hohem Abstraktionsniveau) oder die Analyse wird durch irrelevante Details überladen (bei zu niedrigem Abstraktionsniveau)."
+      },
+      {
+        "id": 94,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Unterscheidung zwischen der Struktur- und Verhaltensdimension eines Systems ist fundamental. Welche Herausforderung entsteht bei der Modellierung eines Wirtschaftsinformatiksystems, wenn die Wechselwirkungen zwischen strukturellen Elementen und den sie beeinflussenden oder von ihnen beeinflussten Verhaltenselementen nicht explizit berücksichtigt werden?",
+        "antwortmoeglichkeiten": [
+          "Das resultierende Modell ist rein statisch und bildet die dynamischen Aspekte des Systems unzureichend ab.",
+          "Das Modell ist zu detailliert und schwer verständlich.",
+          "Es ist nicht möglich, funktionale Anforderungen zu definieren."
+        ],
+        "korrekte_antwort": "Das resultierende Modell ist rein statisch und bildet die dynamischen Aspekte des Systems unzureichend ab."
+      },
+      {
+        "id": 95,
+        "schwierigkeit": "Schwer",
+        "frage": "Das Prinzip der Adaptivität ist entscheidend für die Lebensfähigkeit von Systemen in dynamischen Umgebungen. Welche grundlegende Spannung entsteht typischerweise bei dem Versuch, sowohl strukturelle als auch verhaltensmäßige Adaptivität in einem komplexen System zu realisieren?",
+        "antwortmoeglichkeiten": [
+          "Strukturelle Adaptivität führt immer zu einer Verringerung der Systemeffizienz.",
+          "Der Bedarf an Flexibilität und Anpassungsfähigkeit (Adaptivität) kann mit dem Bedarf an Stabilität und Vorhersagbarkeit (durch feste Strukturen und Prozesse) in Konflikt geraten.",
+          "Verhaltensmäßige Adaptivität ist einfacher zu implementieren als strukturelle Adaptivität."
+        ],
+        "korrekte_antwort": "Der Bedarf an Flexibilität und Anpassungsfähigkeit (Adaptivität) kann mit dem Bedarf an Stabilität und Vorhersagbarkeit (durch feste Strukturen und Prozesse) in Konflikt geraten."
+      },
+      {
+        "id": 96,
+        "schwierigkeit": "Schwer",
+        "frage": "Die drei mentalen, logischen und orthogonalen Dimensionen ('ist_Teil_von', 'ist_ein', 'ist_benachbart_mit') dienen der Analyse der Anwendungsdomäne. Welche methodische Herausforderung entsteht bei dem Versuch, diese drei Dimensionen gleichzeitig in einem zweidimensionalen UML-Diagramm umfassend darzustellen?",
+        "antwortmoeglichkeiten": [
+          "Es ist nicht möglich, alle drei Dimensionen gleichzeitig verlustfrei in einem 2D-Diagramm abzubilden.",
+          "UML bietet keine geeigneten Notationselemente zur Integration dieser Dimensionen.",
+          "Die resultierenden Diagramme werden zu komplex und unübersichtlich."
+        ],
+        "korrekte_antwort": "Es ist nicht möglich, alle drei Dimensionen gleichzeitig verlustfrei in einem 2D-Diagramm abzubilden."
+      },
+      {
+        "id": 97,
+        "schwierigkeit": "Schwer",
+        "frage": "Bei der Verwendung von Abstraktionshierarchien (Taxonomie und Partonomie) zur Darstellung komplexer Systeme: Welches grundlegende Problem kann entstehen, wenn die Kriterien für die Aggregation ('ist_Teil_von') oder Generalisierung ('ist_ein') nicht klar und konsistent definiert sind?",
+        "antwortmoeglichkeiten": [
+          "Die resultierenden Hierarchien sind semantisch unklar, führen zu Mehrdeutigkeiten und erschweren das Verständnis des Systems.",
+          "Die Performance des modellierten Systems wird beeinträchtigt.",
+          "Es ist nicht möglich, die Modelle in Code zu überführen."
+        ],
+        "korrekte_antwort": "Die resultierenden Hierarchien sind semantisch unklar, führen zu Mehrdeutigkeiten und erschweren das Verständnis des Systems."
+      },
+      {
+        "id": 98,
+        "schwierigkeit": "Schwer",
+        "frage": "Das Prinzip der Modularisierung dient der Reduktion von Systemkomplexität. Welche potenziellen Nachteile oder Herausforderungen können mit einer übermäßigen Modularisierung eines Softwaresystems einhergehen?",
+        "antwortmoeglichkeiten": [
+          "Eine geringere Flexibilität bei der Anpassung einzelner Funktionalitäten.",
+          "Erhöhte Komplexität in den Schnittstellen und der Kommunikation zwischen den Modulen, potenziell mit Performance-Einbußen.",
+          "Eine geringere Wiederverwendbarkeit einzelner Komponenten."
+        ],
+        "korrekte_antwort": "Erhöhte Komplexität in den Schnittstellen und der Kommunikation zwischen den Modulen, potenziell mit Performance-Einbußen."
+      },
+      {
+        "id": 99,
+        "schwierigkeit": "Schwer",
+        "frage": "Muster (Patterns) in der Softwareentwicklung bieten bewährte Lösungen für wiederkehrende Probleme. Welche Gefahr besteht bei der unkritischen Anwendung von Mustern, ohne den spezifischen Kontext des Problems ausreichend zu berücksichtigen?",
+        "antwortmoeglichkeiten": [
+          "Die resultierende Lösung ist immer optimal.",
+          "Das Design des Systems kann unnötig komplex werden ('Patternitis'), ohne einen entsprechenden Nutzen zu stiften.",
+          "Die Wartbarkeit des Systems wird verbessert."
+        ],
+        "korrekte_antwort": "Das Design des Systems kann unnötig komplex werden ('Patternitis'), ohne einen entsprechenden Nutzen zu stiften."
+      },
+      {
+        "id": 100,
+        "schwierigkeit": "Schwer",
+        "frage": "Vorgehensmodelle strukturieren den Softwareentwicklungsprozess zeitlich. Welche grundlegende Annahme des Wasserfallmodells kann in dynamischen Projekten mit sich häufig ändernden Anforderungen zu signifikanten Problemen führen?",
+        "antwortmoeglichkeiten": [
+          "Die Annahme, dass alle Anforderungen zu Beginn des Projekts vollständig und stabil sind und die Phasen sequenziell und abgeschlossen durchlaufen werden können.",
+          "Die starke Fokussierung auf die Dokumentation in jeder Phase.",
+          "Die frühe Einbindung des Kunden in den Entwicklungsprozess."
+        ],
+        "korrekte_antwort": "Die Annahme, dass alle Anforderungen zu Beginn des Projekts vollständig und stabil sind und die Phasen sequenziell und abgeschlossen durchlaufen werden können."
+      },
+      {
+        "id": 101,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Abbildungsfunktion eines Modells nach Stachowiak besagt, dass es eine Beziehung zwischen der 'Welt' und dem Modell gibt. Welche Herausforderung entsteht im Requirements Engineering, wenn das mentale Modell eines Stakeholders stark von der 'realen Welt' abweicht oder fehlerhaft ist?",
+        "antwortmoeglichkeiten": [
+          "Das resultierende formale Modell wird die tatsächlichen Bedürfnisse und Anforderungen nicht adäquat widerspiegeln.",
+          "Die Entwicklung des Systems wird beschleunigt.",
+          "Die technischen Spezifikationen werden einfacher zu erstellen sein."
+        ],
+        "korrekte_antwort": "Das resultierende formale Modell wird die tatsächlichen Bedürfnisse und Anforderungen nicht adäquat widerspiegeln."
+      },
+      {
+        "id": 102,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Definition von Systemgrenzen ist ein kritischer erster Schritt in der Systemanalyse. Welches Risiko besteht, wenn die Systemgrenzen zu eng gefasst werden?",
+        "antwortmoeglichkeiten": [
+          "Die Komplexität des zu untersuchenden Systems wird unnötig erhöht.",
+          "Wichtige externe Abhängigkeiten und Interaktionen mit der Umgebung des Systems werden möglicherweise übersehen.",
+          "Die Erfassung der funktionalen Anforderungen wird erschwert."
+        ],
+        "korrekte_antwort": "Wichtige externe Abhängigkeiten und Interaktionen mit der Umgebung des Systems werden möglicherweise übersehen."
+      },
+      {
+        "id": 103,
+        "schwierigkeit": "Schwer",
+        "frage": "Der Unterschied zwischen User Requirements und System Requirements im Requirements Engineering liegt im Detailgrad und der Zielgruppe. Welche Konsequenz kann es haben, wenn System Requirements direkt in der Fachsprache der Anwender formuliert werden?",
+        "antwortmoeglichkeiten": [
+          "Die technischen Implementierungsdetails werden für die Anwender verständlicher.",
+          "Es kann zu Interpretationsspielraum und Ungenauigkeiten kommen, die die technische Umsetzung erschweren.",
+          "Die Validierung der Anforderungen durch die Anwender wird vereinfacht."
+        ],
+        "korrekte_antwort": "Es kann zu Interpretationsspielraum und Ungenauigkeiten kommen, die die technische Umsetzung erschweren."
+      },
+      {
+        "id": 104,
+        "schwierigkeit": "Schwer",
+        "frage": "Die SMART-Kriterien helfen bei der Formulierung von Anforderungen. Welches spezifische Problem soll durch das Kriterium 'Messbar' (Measurable) adressiert werden?",
+        "antwortmoeglichkeiten": [
+          "Die Sicherstellung, dass die Anforderung für alle Stakeholder relevant ist.",
+          "Die Ermöglichung der Überprüfung und Validierung, ob die Anforderung im entwickelten System erfüllt wurde.",
+          "Die Festlegung eines realistischen Zeitrahmens für die Umsetzung der Anforderung."
+        ],
+        "korrekte_antwort": "Die Ermöglichung der Überprüfung und Validierung, ob die Anforderung im entwickelten System erfüllt wurde."
+      },
+      {
+        "id": 105,
+        "schwierigkeit": "Schwer",
+        "frage": "Im V-Modell der Softwareentwicklung erfolgt eine Validierung der entwickelten Komponenten und des Gesamtsystems gegen die Anforderungen. Gegen welche spezifischen Dokumente oder Artefakte wird typischerweise im 'Systemtest' validiert?",
+        "antwortmoeglichkeiten": [
+          "Gegen die detaillierten Systemkomponentenentwürfe.",
+          "Gegen das Pflichtenheft, das die detaillierten funktionalen und nicht-funktionalen Systemanforderungen enthält.",
+          "Gegen den Quellcode der implementierten Module."
+        ],
+        "korrekte_antwort": "Gegen das Pflichtenheft, das die detaillierten funktionalen und nicht-funktionalen Systemanforderungen enthält."
+      },
+      {
+        "id": 106,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Unified Modeling Language (UML) ist eine grafische Modellierungssprache. Welche grundlegende Herausforderung besteht bei der Verwendung von UML zur Beschreibung sehr großer und komplexer Softwaresysteme?",
+        "antwortmoeglichkeiten": [
+          "UML ist für die Modellierung komplexer Systeme ungeeignet.",
+          "Die resultierenden UML-Diagramme können sehr umfangreich und schwer zu überblicken sein, was die Kommunikation und das Verständnis erschwert.",
+          "Es gibt keine Werkzeuge, die die Erstellung großer UML-Modelle unterstützen."
+        ],
+        "korrekte_antwort": "Die resultierenden UML-Diagramme können sehr umfangreich und schwer zu überblicken sein, was die Kommunikation und das Verständnis erschwert."
+      },
+      {
+        "id": 107,
+        "schwierigkeit": "Schwer",
+        "frage": "Ein Fachmodell im Kontext der Softwareentwicklung dient der Darstellung der Konzepte und Beziehungen im Anwendungsbereich. Welche potenzielle Gefahr besteht, wenn das Fachmodell zu stark von technischen Implementierungsüberlegungen beeinflusst wird?",
+        "antwortmoeglichkeiten": [
+          "Das Fachmodell wird für die Fachexperten verständlicher.",
+          "Die Flexibilität des Modells zur Anpassung an fachliche Änderungen kann eingeschränkt werden.",
+          "Die Generierung von Code aus dem Modell wird vereinfacht."
+        ],
+        "korrekte_antwort": "Die Flexibilität des Modells zur Anpassung an fachliche Änderungen kann eingeschränkt werden."
+      },
+      {
+        "id": 108,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Schnittstelle (Interface) in der objektorientierten Programmierung definiert ein 'Was?' ein Typ leisten muss. Welche Designüberlegung ist entscheidend, um sicherzustellen, dass eine Schnittstelle effektiv zur Entkopplung von Komponenten beiträgt?",
+        "antwortmoeglichkeiten": [
+          "Die Schnittstelle sollte so viele Methoden wie möglich definieren, um zukünftige Anforderungen abzudecken.",
+          "Die Schnittstelle sollte nur die absolut notwendigen Methoden definieren und stabil gegenüber Änderungen der Implementierung bleiben.",
+          "Jede Klasse sollte so viele Schnittstellen wie möglich implementieren."
+        ],
+        "korrekte_antwort": "Die Schnittstelle sollte nur die absolut notwendigen Methoden definieren und stabil gegenüber Änderungen der Implementierung bleiben."
+      },
+      {
+        "id": 109,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Konzepte 'Information', 'Daten' und 'Wissen' stehen in einer Beziehung zueinander. Welche spezifische Rolle spielt der 'Kontext' bei der Transformation von Daten zu Information?",
+        "antwortmoeglichkeiten": [
+          "Kontext dient lediglich der Speicherung von Daten.",
+          "Kontext ermöglicht die Interpretation von Daten und verleiht ihnen Bedeutung.",
+          "Kontext reduziert die Menge der verfügbaren Daten."
+        ],
+        "korrekte_antwort": "Kontext ermöglicht die Interpretation von Daten und verleiht ihnen Bedeutung."
+      },
+      {
+        "id": 110,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Wahl der geeigneten Modellierungssprache (z.B. UML, BPMN) hängt vom Zweck des Modells ab. In welchem Szenario wäre die Verwendung von BPMN (Business Process Model and Notation) anstelle von UML-Aktivitätsdiagrammen primär zu empfehlen?",
+        "antwortmoeglichkeiten": [
+          "Zur detaillierten Modellierung des internen Verhaltens einzelner Softwarekomponenten.",
+          "Zur Darstellung und Analyse von Geschäftsprozessen über verschiedene Organisationseinheiten und Systeme hinweg.",
+          "Zur strukturellen Modellierung der Klassen und Objekte eines Softwaresystems."
+        ],
+        "korrekte_antwort": "Zur Darstellung und Analyse von Geschäftsprozessen über verschiedene Organisationseinheiten und Systeme hinweg."
+      },
+      {
+        "id": 111,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Technik des 'Refactorings' wird in der Softwareentwicklung eingesetzt, um die Struktur von Code zu verbessern, ohne sein externes Verhalten zu ändern. In welcher Phase des Softwareentwicklungslebenszyklus ist Refactoring typischerweise am effektivsten und warum?",
+        "antwortmoeglichkeiten": [
+          "Am Ende des Projekts, um die Wartbarkeit zu verbessern.",
+          "Während der Implementierungsphase, wenn Code-Smells oder Redundanzen identifiziert werden, um die Codequalität und Wartbarkeit frühzeitig zu sichern.",
+          "In der Planungsphase, um das Design zu optimieren."
+        ],
+        "korrekte_antwort": "Während der Implementierungsphase, wenn Code-Smells oder Redundanzen identifiziert werden, um die Codequalität und Wartbarkeit frühzeitig zu sichern."
+      },
+      {
+        "id": 112,
+        "schwierigkeit": "Schwer",
+        "frage": "Das Prinzip 'Keep It Simple, Stupid' (KISS) ist eine Richtlinie im Softwaredesign. Welche potenziellen negativen Auswirkungen kann ein Design haben, das diesem Prinzip nicht folgt und unnötige Komplexität aufweist?",
+        "antwortmoeglichkeiten": [
+          "Der Code wird performanter.",
+          "Die Wartbarkeit und Verständlichkeit des Systems nehmen ab, das Risiko von Fehlern steigt.",
+          "Die Entwicklungszeit wird kürzer."
+        ],
+        "korrekte_antwort": "Die Wartbarkeit und Verständlichkeit des Systems nehmen ab, das Risiko von Fehlern steigt."
+      },
+      {
+        "id": 113,
+        "schwierigkeit": "Schwer",
+        "frage": "Im Kontext der Software-Architektur werden verschiedene Stile und Muster eingesetzt. Welches grundlegende Ziel wird durch die Verwendung einer Schichtenarchitektur (Layered Architecture) primär verfolgt?",
+        "antwortmoeglichkeiten": [
+          "Die Erhöhung der Performance durch direkte Kommunikation aller Komponenten.",
+          "Die Reduktion der Abhängigkeiten zwischen verschiedenen Funktionsebenen des Systems, um Wartbarkeit und Austauschbarkeit zu verbessern.",
+          "Die zentrale Speicherung aller Daten in einer einzigen Schicht."
+        ],
+        "korrekte_antwort": "Die Reduktion der Abhängigkeiten zwischen verschiedenen Funktionsebenen des Systems, um Wartbarkeit und Austauschbarkeit zu verbessern."
+      },
+      {
+        "id": 114,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Qualität von Software wird durch verschiedene nicht-funktionale Anforderungen bestimmt (z.B. Performance, Usability, Security). Welche Herausforderung entsteht typischerweise bei dem Versuch, mehrere nicht-funktionale Anforderungen gleichzeitig und optimal zu erfüllen?",
+        "antwortmoeglichkeiten": [
+          "Nicht-funktionale Anforderungen sind immer unabhängig voneinander optimierbar.",
+          "Es können Zielkonflikte zwischen verschiedenen nicht-funktionalen Anforderungen entstehen (z.B. hohe Security kann die Usability beeinträchtigen).",
+          "Die Erfüllung nicht-funktionaler Anforderungen ist im Vergleich zu funktionalen Anforderungen immer einfach."
+        ],
+        "korrekte_antwort": "Es können Zielkonflikte zwischen verschiedenen nicht-funktionalen Anforderungen entstehen (z.B. hohe Security kann die Usability beeinträchtigen)."
+      },
+      {
+        "id": 115,
+        "schwierigkeit": "Schwer",
+        "frage": "Im agilen Vorgehensmodell wird der Product Backlog als zentrale Artefakt für die Anforderungen verwendet. Welcher grundlegende Unterschied besteht in der Art und Weise, wie Anforderungen im Product Backlog im Vergleich zum Pflichtenheft (in einem plan-basierten Ansatz) detailliert werden?",
+        "antwortmoeglichkeiten": [
+          "Anforderungen im Product Backlog sind zu Beginn des Projekts immer vollständig und detailliert beschrieben.",
+          "Anforderungen im Product Backlog werden in der Regel 'just-in-time' und in der notwendigen Detailtiefe für die nächste Iteration (Sprint) detailliert, während das Pflichtenheft eine umfassende Spezifikation zu Beginn anstrebt.",
+          "Das Pflichtenheft enthält keine funktionalen Anforderungen."
+        ],
+        "korrekte_antwort": "Anforderungen im Product Backlog werden in der Regel 'just-in-time' und in der notwendigen Detailtiefe für die nächste Iteration (Sprint) detailliert, während das Pflichtenheft eine umfassende Spezifikation zu Beginn anstrebt."
+      },
+      {
+        "id": 116,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Kommunikation zwischen verschiedenen Rollen (z.B. Fachseite und Entwicklungsteam) ist entscheidend für den Erfolg eines Softwareprojekts. Welche primäre Herausforderung entsteht aufgrund der unterschiedlichen Fachsprachen ('Domain Language' vs. 'Computer Science Language')?",
+        "antwortmoeglichkeiten": [
+          "Die Notwendigkeit einer präzisen Übersetzung und Interpretation von Begriffen, um Missverständnisse und semantischen Verlust zu vermeiden.",
+          "Die Unfähigkeit der Fachseite, technische Dokumente zu verstehen.",
+          "Die Unwilligkeit des Entwicklungsteams, sich mit der Fachdomäne auseinanderzusetzen."
+        ],
+        "korrekte_antwort": "Die Notwendigkeit einer präzisen Übersetzung und Interpretation von Begriffen, um Missverständnisse und semantischen Verlust zu vermeiden."
+      },
+      {
+        "id": 117,
+        "schwierigkeit": "Schwer",
+        "frage": "Im Kontext der Systemanalyse wird zwischen der 'Black-Box'- und der 'White-Box'-Perspektive unterschieden. In welcher Phase des Softwareentwicklungslebenszyklus ist die 'White-Box'-Perspektive typischerweise am relevantesten?",
+        "antwortmoeglichkeiten": [
+          "Während der Anforderungsanalyse, um die Bedürfnisse der Stakeholder zu verstehen.",
+          "Während des Systementwurfs und der Implementierung, um die interne Struktur und das Verhalten der Komponenten zu gestalten und zu überprüfen.",
+          "Während des Systemtests, um die Funktionalität aus Anwendersicht zu validieren."
+        ],
+        "korrekte_antwort": "Während des Systementwurfs und der Implementierung, um die interne Struktur und das Verhalten der Komponenten zu gestalten und zu überprüfen."
+      },
+      {
+        "id": 118,
+        "schwierigkeit": "Schwer",
+        "frage": "Die evolutionäre Natur komplexer Systeme führt häufig zu 'organisierter Komplexität'. Welcher grundlegende Mechanismus treibt diese Zunahme an Komplexität aus der Sicht eines einzelnen Systems in seiner Interaktion mit der Systemumgebung?",
+        "antwortmoeglichkeiten": [
+          "Das Bestreben jedes Systems, seine Anzahl an internen Komponenten zufällig zu erhöhen.",
+          "Die Notwendigkeit für ein System, sich an neue Anforderungen aus seiner Umgebung anzupassen, was oft zu zusätzlichen Strukturen und Prozessen führt.",
+          "Ein inhärenter Trend in der Natur hin zu immer komplexeren Gebilden."
+        ],
+        "korrekte_antwort": "Die Notwendigkeit für ein System, sich an neue Anforderungen aus seiner Umgebung anzupassen, was oft zu zusätzlichen Strukturen und Prozessen führt."
+      },
+      {
+        "id": 119,
+        "schwierigkeit": "Schwer",
+        "frage": "Die Unterscheidung zwischen 'struktureller' und 'verhaltensmäßiger' Adaptivität eines Systems ist wichtig. Geben Sie ein Beispiel für eine verhaltensmäßige Adaptivität in einem E-Commerce-System, das nicht die Änderung der Datenbankstruktur oder der Benutzeroberfläche beinhaltet.",
+        "antwortmoeglichkeiten": [
+          "Die dynamische Anpassung der Rabattstrategien basierend auf dem Kaufverhalten der Kunden.",
+          "Das Hinzufügen eines neuen Feldes zur Kundendatenbank.",
+          "Die Umgestaltung des Checkout-Prozesses auf der Webseite."
+        ],
+        "korrekte_antwort": "Die dynamische Anpassung der Rabattstrategien basierend auf dem Kaufverhalten der Kunden."
+      },
+      {
+        "id": 120,
+        "schwierigkeit": "Schwer",
+        "frage": "Die drei fundamentalen Ressourcen für die Lebensfähigkeit von Systemen sind Information, Material und Energie. Welche spezifische Rolle spielt 'Information' im Kontext der Steuerung und Aufrechterhaltung der Funktionalität eines Systems?",
+        "antwortmoeglichkeiten": [
+          "Information dient ausschließlich der Speicherung von Daten.",
+          "Information ermöglicht die Transformation von Energie in Material.",
+          "Die Anleitung für die Transformation von Materie durch Energie."
+        ],
+        "korrekte_antwort": "Die Anleitung für die Transformation von Materie durch Energie."
+      }
+    ]
+  }

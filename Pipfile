@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pymed = "*"
+requests = "*"
+python-dotenv = "*"
+pypdf2 = "*"
+python-docx = "*"
+python-pptx = "*"
+langchain-community = "*"
+faiss-cpu = "*"
+sentence-transformers = "*"
+langchain = "*"
+langchain-text-splitters = "*"
+matplotlib = "*"
+numpy = "*"
+pandas = "*"
+scikit-learn = "*"
+tqdm = "*"
+transformers = "*"
+torch = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
